@@ -1,0 +1,16 @@
+ROBY WEBSITE - BẢN ĐÃ SỬA LỖI HIỂN THỊ
+
+Bản này đã gộp CSS và JavaScript trực tiếp vào index.html.
+Không cần thư mục assets.
+
+Cách cập nhật GitHub:
+1. Vào repository robyedutech.
+2. Xóa hoặc thay thế file index.html cũ.
+3. Upload file index.html mới trong gói này.
+4. Giữ nguyên file CNAME.
+5. Commit changes.
+6. Chờ GitHub Pages deploy khoảng 1-3 phút.
+7. Mở https://robyedutech.info.vn
+8. Nếu trình duyệt vẫn hiện bản cũ: Ctrl + F5.
+
+Bạn có thể xóa thư mục assets cũ vì phiên bản này không sử dụng assets nữa.
