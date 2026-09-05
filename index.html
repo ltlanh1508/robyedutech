@@ -925,6 +925,19 @@
       .container{width:min(100% - 20px,1180px)}
     }
   </style>
+
+  <!-- Google Analytics 4 (ROBY)
+       Thay G-ZQWY24B903 bằng Measurement ID thật trong Google Analytics. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQWY24B903"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZQWY24B903', {
+      'anonymize_ip': true
+    });
+  </script>
+
 </head>
 <body>
 
@@ -1330,6 +1343,46 @@
   }
 
   document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
+<script>
+  // Theo dõi các hành động quan trọng trên website ROBY bằng GA4.
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (!link || typeof gtag !== 'function') return;
+
+    const href = link.getAttribute('href') || '';
+    const text = (link.textContent || '').trim();
+
+    if (href.includes('zalo.me')) {
+      gtag('event', 'contact_zalo', {
+        event_category: 'contact',
+        event_label: text || 'Zalo ROBY'
+      });
+    } else if (href.startsWith('tel:')) {
+      gtag('event', 'contact_call', {
+        event_category: 'contact',
+        event_label: text || 'Hotline ROBY'
+      });
+    } else if (href.includes('google') || text.toLowerCase().includes('maps')) {
+      gtag('event', 'open_google_maps', {
+        event_category: 'location',
+        event_label: 'Google Maps ROBY'
+      });
+    }
+  });
+
+  document.querySelectorAll('video').forEach(function(video, index) {
+    video.addEventListener('play', function() {
+      if (typeof gtag === 'function') {
+        gtag('event', 'video_play', {
+          event_category: 'video',
+          event_label: video.getAttribute('poster') || ('ROBY video ' + (index + 1))
+        });
+      }
+    }, { once: true });
+  });
 </script>
 
 </body>

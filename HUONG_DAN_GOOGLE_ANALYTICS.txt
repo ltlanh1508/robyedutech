@@ -1,0 +1,30 @@
+ROBY - GOOGLE ANALYTICS 4 - ĐÃ CÀI MÃ THẬT
+
+Measurement ID:
+G-ZQWY24B903
+
+Website:
+https://robyedutech.info.vn
+
+ĐÃ THEO DÕI:
+- Lượt xem trang
+- Người dùng
+- Phiên truy cập
+- Nguồn truy cập
+- Thiết bị
+- Bấm Zalo
+- Bấm gọi điện
+- Bấm Google Maps
+- Lần đầu phát từng video trong một lượt mở trang
+
+CÁCH CẬP NHẬT GITHUB:
+1. Upload file index.html mới và ghi đè index.html cũ.
+2. Commit changes.
+3. Chờ GitHub Pages deploy khoảng 1-3 phút.
+4. Mở https://robyedutech.info.vn bằng điện thoại hoặc tab ẩn danh.
+5. Vào Google Analytics → Báo cáo → Thời gian thực (Realtime).
+6. Sau vài phút, lượt truy cập thử sẽ xuất hiện.
+
+LƯU Ý:
+Google Analytics không hiển thị bộ đếm công khai trên website.
+Số liệu được xem trong tài khoản Google Analytics của ROBY.
