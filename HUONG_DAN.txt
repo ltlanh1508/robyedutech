@@ -1,25 +1,26 @@
-ROBY WEBSITE - BẢN CẬP NHẬT LOGO + HÌNH ẢNH + VIDEO
+CẬP NHẬT ROBY - 4 VIDEO + GOOGLE MAPS
 
-Bản này đã được cập nhật:
-- Logo ROBY thật
-- Ảnh cơ sở ROBY
-- Ảnh flyer khóa học
-- Ảnh voucher
-- Video giới thiệu ROBY
+Upload lên GitHub các file sau:
+- index.html (ghi đè file cũ)
+- video-gioi-thieu-roby.mp4
+- video-aiot.mp4
+- video-lap-trinh.mp4
+- video-ren-chu.mp4
+- poster-gioi-thieu.jpg
+- poster-aiot.jpg
+- poster-lap-trinh.jpg
+- poster-ren-chu.jpg
 
-CÁCH CẬP NHẬT GITHUB:
-1. Giải nén file ZIP.
-2. Vào repository GitHub của bạn.
-3. Upload toàn bộ file và thư mục trong gói này:
-   - index.html
-   - CNAME
-   - thư mục assets
-4. Nếu GitHub hỏi Replace/Overwrite thì chọn thay thế file cũ.
-5. Commit changes.
-6. Chờ khoảng 1-3 phút để GitHub Pages cập nhật.
-7. Mở lại https://robyedutech.info.vn
-8. Nếu trình duyệt vẫn hiện bản cũ, nhấn Ctrl + F5.
+logo-roby-new.png được kèm sẵn để dự phòng; nếu GitHub đã có thì không cần upload lại.
 
-Lưu ý:
-- Bản này dùng 1 file index.html và thư mục assets để chứa ảnh/video.
-- Không cần sửa DNS nữa.
+Sau khi upload:
+1. Commit changes.
+2. Chờ GitHub Pages 1-3 phút.
+3. Mở https://robyedutech.info.vn
+4. Ctrl + F5 nếu máy tính vẫn hiện bản cũ.
+
+Website đã:
+- Thêm 4 video, không tự tải video khi mở trang (preload=none).
+- Hiển thị 2 cột trên máy tính, 1 cột trên điện thoại.
+- Thêm Google Maps ở phần Liên hệ.
+- Có nút Mở Google Maps theo link bạn cung cấp.
