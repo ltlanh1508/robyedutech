@@ -1,0 +1,50 @@
+ROBY WEBSITE - BẢN SEO MASTER
+
+ĐÃ TỐI ƯU:
+1. Title:
+   ROBY Education & Technology | AI - Robotics - STEM - Rèn chữ tại Dĩ An
+
+2. Meta description:
+   ROBY Education & Technology cung cấp các chương trình AI, Robotics, STEM, AIoT,
+   Tin học, rèn chữ và kỹ năng tiền tiểu học cho trẻ em tại Đông Hòa, Dĩ An.
+
+3. Canonical URL:
+   https://robyedutech.info.vn/
+
+4. Open Graph + Twitter Card để hiển thị tốt hơn khi chia sẻ link.
+
+5. Structured Data JSON-LD:
+   EducationalOrganization + LocalBusiness
+   - Tên ROBY
+   - Hotline 0797 039 979
+   - Địa chỉ
+   - Google Maps
+   - Các lĩnh vực AI, Robotics, STEM, AIoT, Tin học, Rèn chữ, Tiền tiểu học
+
+6. robots.txt
+
+7. sitemap.xml
+
+8. Thêm cụm từ địa phương tự nhiên trên trang:
+   AI • Robotics • STEM • Rèn chữ tại Đông Hòa, Dĩ An
+
+CÁCH CẬP NHẬT GITHUB:
+- Upload/ghi đè index.html
+- Upload thêm robots.txt
+- Upload thêm sitemap.xml
+- Các ảnh/video khác giữ nguyên nếu GitHub đã có.
+- Commit changes.
+- Chờ GitHub Pages deploy 1-3 phút.
+
+SAU KHI WEBSITE CẬP NHẬT:
+1. Mở:
+   https://robyedutech.info.vn/robots.txt
+   https://robyedutech.info.vn/sitemap.xml
+   để kiểm tra.
+
+2. Google Search Console:
+   - Sitemaps → nhập: sitemap.xml → Gửi
+   - Kiểm tra URL → https://robyedutech.info.vn/
+   - Yêu cầu lập chỉ mục
+
+3. Không cần yêu cầu lập chỉ mục liên tục. Chỉ yêu cầu lại sau những thay đổi quan trọng.
