@@ -1,0 +1,24 @@
+ROBY - CẬP NHẬT BÀI VIẾT + THỜI GIAN HỌC
+
+Đã thêm:
+1. Bài viết "Cuối tuần cho con học điều hay – thay vì chỉ chơi điện thoại"
+2. Ảnh hoạt động Robot thực tế
+3. Poster ưu đãi năm học mới
+4. Mục "Thời gian học"
+5. Poster khung giờ
+6. Menu "Thời gian"
+7. Nút đăng ký/liên hệ qua Zalo
+8. Giữ nguyên SEO + Google Analytics G-ZQWY24B903
+9. Không dùng cụm "khóa học" trong nội dung HTML
+
+ĐỂ CẬP NHẬT GITHUB:
+Upload và ghi đè:
+- index.html
+- sitemap.xml
+
+Upload thêm 3 ảnh:
+- hoat-dong-robot-thuc-te.jpg
+- uu-dai-nam-hoc-moi.jpg
+- thoi-gian-hoc-roby.jpg
+
+Sau đó Commit changes và chờ GitHub Pages 1–3 phút.

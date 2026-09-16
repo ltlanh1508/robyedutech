@@ -672,6 +672,181 @@
     .call{background:var(--orange)}
 
 
+
+    /* ARTICLE / NEWS */
+    .news-feature{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:28px;
+      align-items:stretch;
+    }
+    .news-photo,
+    .promo-poster{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:22px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+    .news-photo img{
+      width:100%;
+      height:100%;
+      min-height:520px;
+      object-fit:cover;
+      object-position:center;
+    }
+    .news-copy{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:30px;
+      box-shadow:var(--shadow);
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+    .news-copy h2{
+      font-size:clamp(31px,4vw,46px);
+      line-height:1.08;
+      margin:12px 0 14px;
+      color:var(--blue);
+    }
+    .news-copy > p{
+      color:var(--muted);
+      font-size:17px;
+      margin:0 0 18px;
+    }
+    .offer-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+      margin:10px 0 18px;
+    }
+    .offer{
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:16px;
+      background:var(--light);
+    }
+    .offer strong{
+      display:block;
+      color:var(--blue);
+      font-size:19px;
+      margin-bottom:4px;
+    }
+    .offer .price{
+      color:var(--orange);
+      font-size:31px;
+      line-height:1;
+      font-weight:700;
+      margin:8px 0;
+    }
+    .offer span{
+      color:var(--muted);
+      font-size:14px;
+    }
+    .news-note{
+      display:inline-block;
+      margin-bottom:18px;
+      font-weight:700;
+      color:#9b5300;
+      background:#fff4df;
+      border:1px solid #ffe0a6;
+      border-radius:12px;
+      padding:10px 13px;
+    }
+    .promo-poster{
+      margin-top:22px;
+      max-width:760px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .promo-poster img{
+      width:100%;
+      height:auto;
+    }
+
+    /* STUDY TIME */
+    .schedule-layout{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:24px;
+      align-items:stretch;
+    }
+    .schedule-details{
+      display:grid;
+      gap:14px;
+    }
+    .schedule-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:20px;
+      box-shadow:0 8px 24px rgba(8,61,157,.06);
+    }
+    .schedule-card h3{
+      margin:0 0 12px;
+      font-size:23px;
+      color:var(--blue);
+    }
+    .time-row{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:14px;
+      padding:10px 0;
+      border-bottom:1px dashed #dce5ef;
+      font-size:16px;
+    }
+    .time-row:last-child{border-bottom:0}
+    .time-row span:first-child{
+      color:var(--muted);
+      font-weight:700;
+    }
+    .time-row strong{
+      color:var(--orange);
+      text-align:right;
+    }
+    .duration-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+    }
+    .duration-item{
+      background:#eef6ff;
+      border-radius:15px;
+      padding:15px;
+      text-align:center;
+    }
+    .duration-item strong{
+      display:block;
+      color:var(--blue);
+      font-size:18px;
+    }
+    .duration-item span{
+      color:var(--muted);
+      font-size:14px;
+    }
+    .schedule-poster{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:8px;
+      box-shadow:var(--shadow);
+      display:flex;
+      align-items:center;
+    }
+    .schedule-poster img{
+      width:100%;
+      height:auto;
+      border-radius:15px;
+    }
+    .schedule-footnote{
+      margin-top:14px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
     /* VIDEO GALLERY */
     .video-grid{
       display:grid;
@@ -775,7 +950,7 @@
       .nav a:hover{background:var(--light)}
       .nav-cta{text-align:center;margin-top:4px}
 
-      .hero-grid,.about-grid,.contact-grid,.map-section{grid-template-columns:1fr}
+      .hero-grid,.about-grid,.contact-grid,.map-section,.news-feature,.schedule-layout{grid-template-columns:1fr}
       .course-grid{grid-template-columns:repeat(2,1fr)}
       .video-grid{grid-template-columns:1fr}
       .footer-grid{grid-template-columns:1fr 1fr}
@@ -868,7 +1043,7 @@
         font-size:16px;
       }
 
-      .feature-grid,.course-grid,.program-grid,.video-grid,.map-section,.footer-grid{
+      .feature-grid,.course-grid,.program-grid,.video-grid,.map-section,.news-feature,.schedule-layout,.footer-grid{
         grid-template-columns:1fr;
       }
 
@@ -876,6 +1051,13 @@
         height:auto;
         object-fit:contain;
       }
+
+      .news-photo img{min-height:0;height:auto}
+      .news-copy{padding:20px}
+      .offer-grid,.duration-grid{grid-template-columns:1fr}
+      .time-row{align-items:flex-start;flex-direction:column;gap:3px}
+      .time-row strong{text-align:left}
+
 
       .video-box{
         padding:6px;
@@ -969,6 +1151,8 @@
       <a href="#gioi-thieu">Giới thiệu</a>
       <a href="#chuong-trinh-hoc">Chương trình</a>
       <a href="#chuong-trinh">Nổi bật</a>
+          <a href="#thoi-gian">Thời gian</a>
+      <a href="#thoi-gian">Thời gian</a>
       <a href="#video">Video</a>
       <a href="#lien-he">Liên hệ</a>
       <a class="nav-cta" href="https://zalo.me/0797039979" target="_blank" rel="noopener">Đăng ký ngay</a>
@@ -996,7 +1180,7 @@
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#chuong-trinh-hoc">Xem chương trình</a>
+          <a class="btn btn-primary" href="#chuong-trinh-hoc">Xem các chương trình</a>
           <a class="btn btn-outline" href="https://zalo.me/0797039979" target="_blank" rel="noopener">Tư vấn qua Zalo</a>
         </div>
 
@@ -1068,7 +1252,7 @@
   <section class="section section-soft" id="chuong-trinh-hoc">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Chương trình tại ROBY</span>
+        <span class="eyebrow">Các chương trình</span>
         <h2>Chương trình học tại ROBY</h2>
         <p>Thiết kế theo hướng dễ tiếp cận, có thực hành và chú trọng sự tiến bộ của học sinh.</p>
       </div>
@@ -1155,6 +1339,107 @@
       </div>
     </div>
   </section>
+
+  
+  <section class="section section-soft" id="tin-moi">
+    <div class="container">
+      <div class="news-feature">
+        <div class="news-photo">
+          <img src="hoat-dong-robot-thuc-te.jpg" alt="Hoạt động trải nghiệm Robot thực tế tại ROBY Education & Technology" loading="lazy">
+        </div>
+
+        <article class="news-copy">
+          <span class="eyebrow">Hoạt động tại ROBY</span>
+          <h2>Cuối tuần cho con học điều hay – thay vì chỉ chơi điện thoại</h2>
+          <p>
+            Tại <strong>ROBY Education & Technology</strong>, trẻ được học thông qua trải nghiệm,
+            thực hành và tự tay tạo ra sản phẩm. Từ AI – Robotics đến rèn chữ và nền tảng vào lớp 1,
+            ROBY hướng tới những buổi học vui, dễ tiếp cận và có ích cho con.
+          </p>
+
+          <div class="offer-grid">
+            <div class="offer">
+              <strong>Trải nghiệm AI – Robotics</strong>
+              <div class="price">99.000đ/buổi</div>
+              <span>Lắp ráp & điều khiển robot, thực hành trực tiếp, khơi gợi sáng tạo. Ưu đãi cho 10 học sinh đầu tiên.</span>
+            </div>
+
+            <div class="offer">
+              <strong>Rèn chữ – nền tảng vào lớp 1</strong>
+              <div class="price">299.000đ/tháng</div>
+              <span>Rèn tư thế, cách cầm bút, luyện chữ đúng – đẹp và hỗ trợ nền tảng Toán. Ưu đãi cho 10 học sinh đầu tiên.</span>
+            </div>
+          </div>
+
+          <div class="news-note">
+            Ưu đãi chào mừng năm học mới áp dụng đến 30/09/2026 – số lượng có hạn.
+          </div>
+
+          <div class="hero-actions" style="margin-bottom:0">
+            <a class="btn btn-primary" href="https://zalo.me/0797039979" target="_blank" rel="noopener">Đăng ký qua Zalo</a>
+            <a class="btn btn-outline" href="#thoi-gian">Xem thời gian học</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="promo-poster">
+        <img src="uu-dai-nam-hoc-moi.jpg" alt="Ưu đãi AI Robotics và rèn chữ tại ROBY" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="thoi-gian">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Thời gian học</span>
+        <h2>Khung giờ linh hoạt tại ROBY</h2>
+        <p>Phụ huynh có thể lựa chọn khung giờ phù hợp trong tuần hoặc cuối tuần.</p>
+      </div>
+
+      <div class="schedule-layout">
+        <div class="schedule-details">
+          <div class="schedule-card">
+            <h3>Thứ 2 – Thứ 6</h3>
+            <div class="time-row"><span>Buổi sáng</span><strong>08:00 – 09:30</strong></div>
+            <div class="time-row"><span>Buổi chiều</span><strong>14:30 – 16:00</strong></div>
+            <div class="time-row"><span>Buổi tối – Ca 1</span><strong>16:30 – 18:00</strong></div>
+            <div class="time-row"><span>Buổi tối – Ca 2</span><strong>18:00 – 19:30</strong></div>
+          </div>
+
+          <div class="schedule-card">
+            <h3>Thứ 7 & Chủ nhật</h3>
+            <div class="time-row"><span>Buổi sáng</span><strong>09:00 – 11:00</strong></div>
+            <div class="time-row"><span>Buổi chiều</span><strong>14:30 – 16:00</strong></div>
+          </div>
+
+          <div class="schedule-card">
+            <h3>Thời lượng tham khảo</h3>
+            <div class="duration-grid">
+              <div class="duration-item">
+                <strong>Robot</strong>
+                <span>Khoảng 60 phút / buổi</span>
+              </div>
+              <div class="duration-item">
+                <strong>Rèn chữ</strong>
+                <span>Khoảng 90 phút / buổi</span>
+              </div>
+            </div>
+            <p class="schedule-footnote">
+              Lịch có thể được sắp xếp linh hoạt theo chương trình, độ tuổi và tình hình thực tế.
+              Vui lòng liên hệ Zalo ROBY để xác nhận thời gian trước khi đến.
+            </p>
+          </div>
+
+          <a class="btn btn-primary" href="https://zalo.me/0797039979" target="_blank" rel="noopener">Liên hệ Zalo để giữ chỗ</a>
+        </div>
+
+        <div class="schedule-poster">
+          <img src="thoi-gian-hoc-roby.jpg" alt="Khung giờ học tại ROBY Education & Technology" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <section class="section section-soft" id="video">
     <div class="container">
@@ -1295,7 +1580,7 @@
         <div class="footer-links">
           <a href="#gioi-thieu">Giới thiệu</a>
           <a href="#chuong-trinh-hoc">Chương trình</a>
-      <a href="#chuong-trinh">Nổi bật</a>
+          <a href="#chuong-trinh">Nổi bật</a>
           <a href="#video">Video</a>
           <a href="#lien-he">Liên hệ</a>
         </div>
