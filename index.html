@@ -453,6 +453,187 @@
     }
 
 
+
+    /* DETAILED PROGRAMS */
+    .program-list{
+      display:grid;
+      gap:18px;
+      margin-top:30px;
+    }
+    .program-detail{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:22px;
+      box-shadow:0 10px 28px rgba(20,34,56,.05);
+      overflow:hidden;
+    }
+    .program-summary{
+      display:grid;
+      grid-template-columns:auto 1fr auto;
+      gap:16px;
+      align-items:center;
+      padding:22px 24px;
+      cursor:pointer;
+      list-style:none;
+    }
+    .program-summary::-webkit-details-marker{display:none}
+    .program-number{
+      width:56px;
+      height:56px;
+      border-radius:16px;
+      display:grid;
+      place-items:center;
+      background:var(--blue);
+      color:#fff;
+      font-size:22px;
+      font-weight:700;
+      flex-shrink:0;
+    }
+    .program-title h3{
+      margin:0 0 5px;
+      font-size:24px;
+      color:var(--blue);
+    }
+    .program-title p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+    }
+    .program-toggle{
+      width:36px;
+      height:36px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:var(--light);
+      color:var(--blue);
+      font-size:22px;
+      font-weight:700;
+      transition:.2s;
+    }
+    details[open] .program-toggle{transform:rotate(45deg)}
+    .program-body{
+      border-top:1px solid var(--line);
+      padding:24px;
+      background:#fbfdff;
+    }
+    .program-meta{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:12px;
+      margin-bottom:20px;
+    }
+    .program-meta-item{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:15px;
+      padding:13px 14px;
+    }
+    .program-meta-item strong{
+      display:block;
+      color:var(--blue);
+      font-size:14px;
+      margin-bottom:3px;
+    }
+    .program-meta-item span{
+      color:var(--muted);
+      font-size:14px;
+    }
+    .program-columns{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+    }
+    .program-box{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:17px;
+      padding:18px;
+    }
+    .program-box h4{
+      margin:0 0 10px;
+      color:var(--blue);
+      font-size:19px;
+    }
+    .program-box p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+    }
+    .program-box ul{
+      margin:0;
+      padding-left:20px;
+      color:var(--muted);
+      font-size:15px;
+    }
+    .program-box li{margin:6px 0}
+    .roadmap{
+      margin-top:18px;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:17px;
+      padding:18px;
+    }
+    .roadmap h4{
+      margin:0 0 12px;
+      color:var(--blue);
+      font-size:19px;
+    }
+    .roadmap-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:10px;
+    }
+    .roadmap-stage{
+      background:var(--light);
+      border-radius:14px;
+      padding:13px;
+    }
+    .roadmap-stage strong{
+      display:block;
+      color:var(--orange);
+      font-size:14px;
+      margin-bottom:7px;
+    }
+    .roadmap-stage ol{
+      margin:0;
+      padding-left:19px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .roadmap-stage li{margin:5px 0}
+    .pathway-box{
+      margin-top:24px;
+      background:linear-gradient(135deg,#eef6ff,#fff);
+      border:1px solid #d8e8fb;
+      border-radius:22px;
+      padding:24px;
+    }
+    .pathway-box h3{
+      margin:0 0 10px;
+      color:var(--blue);
+      font-size:26px;
+    }
+    .pathway-box p{
+      margin:0 0 14px;
+      color:var(--muted);
+      font-size:16px;
+    }
+    .pathway-chips{
+      display:flex;
+      gap:9px;
+      flex-wrap:wrap;
+    }
+    .pathway-chip{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:8px 12px;
+      color:var(--blue);
+      font-size:14px;
+      font-weight:700;
+    }
+
     /* PROGRAM PROFILE PDF */
     .profile-document{
       margin-top:28px;
@@ -1119,6 +1300,16 @@
       .profile-points{grid-template-columns:1fr}
       .profile-actions{display:grid;grid-template-columns:1fr}
 
+      .program-summary{grid-template-columns:auto 1fr;padding:18px 16px}
+      .program-toggle{display:none}
+      .program-number{width:48px;height:48px;font-size:19px}
+      .program-title h3{font-size:21px}
+      .program-body{padding:16px}
+      .program-meta{grid-template-columns:1fr 1fr}
+      .program-columns{grid-template-columns:1fr}
+      .roadmap-grid{grid-template-columns:1fr}
+
+
 
       .program-card img{
         height:auto;
@@ -1225,7 +1416,6 @@
       <a href="#chuong-trinh-hoc">Chương trình</a>
       <a href="#chuong-trinh">Nổi bật</a>
           <a href="#thoi-gian">Thời gian</a>
-      <a href="#thoi-gian">Thời gian</a>
       <a href="#video">Video</a>
       <a href="#lien-he">Liên hệ</a>
       <a class="nav-cta" href="https://zalo.me/0797039979" target="_blank" rel="noopener">Đăng ký ngay</a>
@@ -1322,51 +1512,364 @@
     </div>
   </section>
 
+  
   <section class="section section-soft" id="chuong-trinh-hoc">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Chương trình ROBY</span>
         <h2>CHƯƠNG TRÌNH &amp; NỘI DUNG HỌC</h2>
-        <p>Thiết kế theo hướng dễ tiếp cận, có thực hành và chú trọng sự tiến bộ của học sinh.</p>
+        <p>
+          Hệ thống chương trình công nghệ thiếu nhi tại ROBY được thiết kế theo từng độ tuổi,
+          mỗi Level kéo dài 03 tháng với 12 buổi, chú trọng thực hành và sản phẩm đầu ra.
+        </p>
       </div>
 
-      <div class="course-grid">
-        <article class="course">
-          <div class="course-icon">🤖</div>
-          <h3>Lắp ráp Robot</h3>
-          <p>Trải nghiệm STEM thực hành, lắp ráp mô hình và phát triển tư duy sáng tạo.</p>
-        </article>
+      <div class="program-list">
 
-        <article class="course">
-          <div class="course-icon">🧠</div>
-          <h3>AI • Robotics • AIoT</h3>
-          <p>Tiếp cận trí tuệ nhân tạo, robot, cảm biến và các hệ thống công nghệ hiện đại.</p>
-        </article>
+        <details class="program-detail" open>
+          <summary class="program-summary">
+            <div class="program-number">01</div>
+            <div class="program-title">
+              <h3>Robot cơ bản – Lắp ráp mô hình</h3>
+              <p>ROBY Junior Robot – Build &amp; Explore • 5–8 tuổi</p>
+            </div>
+            <div class="program-toggle">+</div>
+          </summary>
+          <div class="program-body">
+            <div class="program-meta">
+              <div class="program-meta-item"><strong>Độ tuổi</strong><span>5–8 tuổi</span></div>
+              <div class="program-meta-item"><strong>Thời lượng</strong><span>12 buổi / 03 tháng</span></div>
+              <div class="program-meta-item"><strong>Mỗi buổi</strong><span>60–90 phút</span></div>
+              <div class="program-meta-item"><strong>Đầu vào</strong><span>Không yêu cầu lập trình hoặc điện tử</span></div>
+            </div>
 
-        <article class="course">
-          <div class="course-icon">🧪</div>
-          <h3>STEAM</h3>
-          <p>Kết hợp khoa học, công nghệ, kỹ thuật, nghệ thuật và toán học qua hoạt động thực tế.</p>
-        </article>
+            <div class="program-columns">
+              <div class="program-box">
+                <h4>Mục tiêu</h4>
+                <p>Tạo hứng thú công nghệ, rèn phối hợp tay–mắt, tư duy không gian, khả năng làm theo hướng dẫn và xử lý lỗi đơn giản.</p>
+              </div>
+              <div class="program-box">
+                <h4>Sản phẩm đầu ra</h4>
+                <p>Sâu đo, nhện, côn trùng, bọ cạp, robot đi bộ, cánh tay robot, xe robot và mô hình sáng tạo.</p>
+              </div>
+              <div class="program-box">
+                <h4>Sau 03 tháng, học sinh có thể</h4>
+                <ul>
+                  <li>Nhận biết motor, pin/nguồn, bánh răng, trục, bánh xe, khớp nối và khung.</li>
+                  <li>Hiểu trực quan cách motor và cơ cấu truyền động tạo chuyển động.</li>
+                  <li>Quan sát mẫu, phân loại chi tiết, lắp theo từng bước và kiểm tra lại.</li>
+                  <li>Hoàn thiện mô hình robot đơn giản và tự giới thiệu sản phẩm.</li>
+                </ul>
+              </div>
+              <div class="program-box">
+                <h4>Hướng phát triển</h4>
+                <p>Sẵn sàng chuyển tiếp lên Robotics có điều khiển và lập trình.</p>
+              </div>
+            </div>
 
-        <article class="course">
-          <div class="course-icon">💻</div>
-          <h3>Tin học • Lập trình</h3>
-          <p>Phát triển kỹ năng máy tính và tư duy lập trình theo từng độ tuổi.</p>
-        </article>
+            <div class="roadmap">
+              <h4>Lộ trình 12 buổi</h4>
+              <div class="roadmap-grid">
+                <div class="roadmap-stage">
+                  <strong>Khởi động</strong>
+                  <ol><li>Làm quen với Robot</li><li>Khám phá chuyển động</li><li>Motor và nguồn điện</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Thực hành cốt lõi</strong>
+                  <ol start="4"><li>Robot sâu đo</li><li>Robot nhện</li><li>Robot côn trùng</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Ứng dụng</strong>
+                  <ol start="7"><li>Robot bọ cạp</li><li>Robot đi bộ</li><li>Cánh tay robot cơ bản</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Dự án &amp; trình bày</strong>
+                  <ol start="10"><li>Xe robot cơ bản</li><li>Robot sáng tạo</li><li>ROBY Robot Day</li></ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
 
-        <article class="course">
-          <div class="course-icon">✍️</div>
-          <h3>Rèn chữ đẹp</h3>
-          <p>Rèn cầm bút, tư thế ngồi, nét cơ bản, chữ rõ ràng và thói quen học tập tốt.</p>
-        </article>
+        <details class="program-detail">
+          <summary class="program-summary">
+            <div class="program-number">02</div>
+            <div class="program-title">
+              <h3>Tin học căn bản cho thiếu nhi</h3>
+              <p>Digital Skills for Kids – Level 1 • 6–10 tuổi</p>
+            </div>
+            <div class="program-toggle">+</div>
+          </summary>
+          <div class="program-body">
+            <div class="program-meta">
+              <div class="program-meta-item"><strong>Độ tuổi</strong><span>6–10 tuổi</span></div>
+              <div class="program-meta-item"><strong>Thời lượng</strong><span>12 buổi / 03 tháng</span></div>
+              <div class="program-meta-item"><strong>Mỗi buổi</strong><span>75–90 phút</span></div>
+              <div class="program-meta-item"><strong>Đầu vào</strong><span>Biết đọc/viết cơ bản; chưa cần biết sử dụng máy tính</span></div>
+            </div>
 
-        <article class="course">
-          <div class="course-icon">📚</div>
-          <h3>Kỹ năng tiền tiểu học</h3>
-          <p>Chuẩn bị nền tảng, nề nếp và sự tự tin trước khi trẻ bước vào lớp 1.</p>
-        </article>
-      
+            <div class="program-columns">
+              <div class="program-box">
+                <h4>Mục tiêu</h4>
+                <p>Giúp trẻ sử dụng máy tính tự tin, quản lý tệp, soạn nội dung, làm trình chiếu, tìm kiếm thông tin và hình thành thói quen an toàn số.</p>
+              </div>
+              <div class="program-box">
+                <h4>Sản phẩm đầu ra</h4>
+                <p>Thư mục cá nhân, văn bản trình bày đẹp, sản phẩm Word, bài trình chiếu 5–7 slide và bộ quy tắc an toàn số.</p>
+              </div>
+              <div class="program-box">
+                <h4>Sau 03 tháng, học sinh có thể</h4>
+                <ul>
+                  <li>Sử dụng chuột và bàn phím đúng cách.</li>
+                  <li>Tạo, lưu, đổi tên, sao chép và sắp xếp file/folder.</li>
+                  <li>Tạo văn bản có định dạng và chèn hình ảnh đơn giản.</li>
+                  <li>Tạo bài trình chiếu 5–7 slide.</li>
+                  <li>Tìm kiếm Internet có mục đích và bảo vệ thông tin cá nhân.</li>
+                </ul>
+              </div>
+              <div class="program-box">
+                <h4>Trọng tâm</h4>
+                <p>Kỹ năng số nền tảng: máy tính, file/folder, Word, PowerPoint, Internet và an toàn số.</p>
+              </div>
+            </div>
+
+            <div class="roadmap">
+              <h4>Lộ trình 12 buổi</h4>
+              <div class="roadmap-grid">
+                <div class="roadmap-stage">
+                  <strong>Khởi động</strong>
+                  <ol><li>Làm quen máy tính</li><li>Chuột và bàn phím</li><li>Windows cơ bản</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Thực hành cốt lõi</strong>
+                  <ol start="4"><li>File và Folder</li><li>Word 1 – Soạn thảo</li><li>Word 2 – Trình bày</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Ứng dụng</strong>
+                  <ol start="7"><li>Dự án Word</li><li>PowerPoint 1</li><li>PowerPoint 2</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Dự án &amp; trình bày</strong>
+                  <ol start="10"><li>Internet &amp; tìm kiếm</li><li>An toàn số</li><li>Digital Show</li></ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="program-detail">
+          <summary class="program-summary">
+            <div class="program-number">03</div>
+            <div class="program-title">
+              <h3>Robotics cho thiếu nhi</h3>
+              <p>Robotics Explorer – Level 1 • 7–12 tuổi</p>
+            </div>
+            <div class="program-toggle">+</div>
+          </summary>
+          <div class="program-body">
+            <div class="program-meta">
+              <div class="program-meta-item"><strong>Độ tuổi</strong><span>7–12 tuổi</span></div>
+              <div class="program-meta-item"><strong>Thời lượng</strong><span>12 buổi / 03 tháng</span></div>
+              <div class="program-meta-item"><strong>Mỗi buổi</strong><span>90 phút</span></div>
+              <div class="program-meta-item"><strong>Đầu vào</strong><span>Đọc hướng dẫn cơ bản; nên biết thao tác máy tính đơn giản</span></div>
+            </div>
+
+            <div class="program-columns">
+              <div class="program-box">
+                <h4>Mục tiêu</h4>
+                <p>Hiểu cấu trúc robot, lắp được robot có motor/cảm biến và lập trình các hành vi đơn giản.</p>
+              </div>
+              <div class="program-box">
+                <h4>Sản phẩm đầu ra</h4>
+                <p>Robot chạy cơ bản, tránh vật cản, dò đường, Robot Challenge và dự án robot cuối Level.</p>
+              </div>
+              <div class="program-box">
+                <h4>Sau 03 tháng, học sinh có thể</h4>
+                <ul>
+                  <li>Phân biệt cơ khí, bộ điều khiển, cơ cấu chấp hành và cảm biến.</li>
+                  <li>Lắp robot di chuyển ổn định và kiểm tra lỗi cơ bản.</li>
+                  <li>Hiểu chuyển động, sự kiện, lặp và điều kiện ở mức trực quan.</li>
+                  <li>Sử dụng cảm biến để robot phản ứng với môi trường.</li>
+                </ul>
+              </div>
+              <div class="program-box">
+                <h4>Trọng tâm</h4>
+                <p>Lắp ráp, điều khiển, cảm biến và thuật toán – hướng tới robot có hành vi.</p>
+              </div>
+            </div>
+
+            <div class="roadmap">
+              <h4>Lộ trình 12 buổi</h4>
+              <div class="roadmap-grid">
+                <div class="roadmap-stage">
+                  <strong>Khởi động</strong>
+                  <ol><li>Robot &amp; hệ thống robot</li><li>Cơ khí và truyền động</li><li>Motor &amp; điều khiển</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Thực hành cốt lõi</strong>
+                  <ol start="4"><li>Lập trình chuyển động</li><li>Loop &amp; pattern</li><li>Cảm biến khoảng cách</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Ứng dụng</strong>
+                  <ol start="7"><li>Robot tránh vật cản</li><li>Cảm biến đường/màu</li><li>Robot dò đường</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Dự án &amp; trình bày</strong>
+                  <ol start="10"><li>Robot Challenge</li><li>Final Project</li><li>Robotics Demo Day</li></ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="program-detail">
+          <summary class="program-summary">
+            <div class="program-number">04</div>
+            <div class="program-title">
+              <h3>Lập trình cơ bản cho thiếu nhi</h3>
+              <p>Coding for Kids – Scratch Level 1 • 7–12 tuổi</p>
+            </div>
+            <div class="program-toggle">+</div>
+          </summary>
+          <div class="program-body">
+            <div class="program-meta">
+              <div class="program-meta-item"><strong>Độ tuổi</strong><span>7–12 tuổi</span></div>
+              <div class="program-meta-item"><strong>Thời lượng</strong><span>12 buổi / 03 tháng</span></div>
+              <div class="program-meta-item"><strong>Mỗi buổi</strong><span>90 phút</span></div>
+              <div class="program-meta-item"><strong>Đầu vào</strong><span>Biết chuột, bàn phím và mở/lưu file ở mức cơ bản</span></div>
+            </div>
+
+            <div class="program-columns">
+              <div class="program-box">
+                <h4>Mục tiêu</h4>
+                <p>Hình thành tư duy thuật toán qua hoạt hình và game trước khi chuyển sang Scratch nâng cao hoặc Python.</p>
+              </div>
+              <div class="program-box">
+                <h4>Sản phẩm đầu ra</h4>
+                <p>Animation chuyển động, hoạt hình tương tác, game phản xạ, game có điểm, mini game và dự án cuối Level.</p>
+              </div>
+              <div class="program-box">
+                <h4>Sau 03 tháng, học sinh có thể</h4>
+                <ul>
+                  <li>Hiểu sequence, event, loop, condition, variable và coordinate ở mức cơ bản.</li>
+                  <li>Phân tích game thành nhân vật, luật, sự kiện, điểm và điều kiện thắng/thua.</li>
+                  <li>Tạo hoạt hình tương tác và ít nhất một game hoàn chỉnh.</li>
+                  <li>Chạy thử, tìm lỗi và cải tiến chương trình.</li>
+                </ul>
+              </div>
+              <div class="program-box">
+                <h4>Hướng phát triển</h4>
+                <p>Có nền tảng chuyển sang Scratch nâng cao hoặc Python for Kids.</p>
+              </div>
+            </div>
+
+            <div class="roadmap">
+              <h4>Lộ trình 12 buổi</h4>
+              <div class="roadmap-grid">
+                <div class="roadmap-stage">
+                  <strong>Khởi động</strong>
+                  <ol><li>Coding &amp; thuật toán</li><li>Scratch Interface</li><li>Motion &amp; Coordinates</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Thực hành cốt lõi</strong>
+                  <ol start="4"><li>Events &amp; Interaction</li><li>Loops</li><li>Conditions</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Ứng dụng</strong>
+                  <ol start="7"><li>Variables &amp; Score</li><li>Sound &amp; Effects</li><li>Game Design</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Dự án &amp; trình bày</strong>
+                  <ol start="10"><li>Mini Project</li><li>Final Project</li><li>Coding Show</li></ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="program-detail">
+          <summary class="program-summary">
+            <div class="program-number">05</div>
+            <div class="program-title">
+              <h3>Trí tuệ nhân tạo cho thiếu nhi</h3>
+              <p>AI Explorer for Kids – Level 1 • 9–14 tuổi</p>
+            </div>
+            <div class="program-toggle">+</div>
+          </summary>
+          <div class="program-body">
+            <div class="program-meta">
+              <div class="program-meta-item"><strong>Độ tuổi</strong><span>9–14 tuổi</span></div>
+              <div class="program-meta-item"><strong>Thời lượng</strong><span>12 buổi / 03 tháng</span></div>
+              <div class="program-meta-item"><strong>Mỗi buổi</strong><span>90 phút</span></div>
+              <div class="program-meta-item"><strong>Đầu vào</strong><span>Kỹ năng máy tính cơ bản; không yêu cầu toán Machine Learning</span></div>
+            </div>
+
+            <div class="program-columns">
+              <div class="program-box">
+                <h4>Mục tiêu</h4>
+                <p>Giúp trẻ hiểu AI học từ dữ liệu như thế nào, trải nghiệm Computer Vision và sử dụng Generative AI có trách nhiệm.</p>
+              </div>
+              <div class="program-box">
+                <h4>Sản phẩm đầu ra</h4>
+                <p>Bản đồ AI quanh em, mô hình phân loại ảnh, demo nhận diện, sản phẩm sáng tạo có AI và dự án AI + thuyết trình.</p>
+              </div>
+              <div class="program-box">
+                <h4>Sau 03 tháng, học sinh có thể</h4>
+                <ul>
+                  <li>Phân biệt chương trình theo luật cố định và hệ thống AI học từ dữ liệu.</li>
+                  <li>Hiểu dataset, label, training, prediction và sai số bằng ví dụ trực quan.</li>
+                  <li>Tạo mô hình phân loại hình ảnh đơn giản.</li>
+                  <li>Trải nghiệm nhận diện vật thể/cử chỉ và các ví dụ Computer Vision.</li>
+                  <li>Sử dụng GenAI có trách nhiệm và biết bảo vệ dữ liệu cá nhân.</li>
+                </ul>
+              </div>
+              <div class="program-box">
+                <h4>Trọng tâm</h4>
+                <p>Dữ liệu, Machine Learning trực quan, Computer Vision và Generative AI qua trải nghiệm.</p>
+              </div>
+            </div>
+
+            <div class="roadmap">
+              <h4>Lộ trình 12 buổi</h4>
+              <div class="roadmap-grid">
+                <div class="roadmap-stage">
+                  <strong>Khởi động</strong>
+                  <ol><li>AI quanh em</li><li>AI vs Program vs Robot</li><li>Data &amp; Labels</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Thực hành cốt lõi</strong>
+                  <ol start="4"><li>Machine Learning trực quan</li><li>Image Classification</li><li>Improve the Model</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Ứng dụng</strong>
+                  <ol start="7"><li>Computer Vision</li><li>Object / Gesture Detection</li><li>Generative AI</li></ol>
+                </div>
+                <div class="roadmap-stage">
+                  <strong>Dự án &amp; trình bày</strong>
+                  <ol start="10"><li>AI Safety &amp; Ethics</li><li>AI Final Project</li><li>AI Demo Day</li></ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+      </div>
+
+      <div class="pathway-box">
+        <h3>Lộ trình phát triển 1–2 năm tại ROBY</h3>
+        <p>
+          Học sinh có thể đi theo lộ trình công nghệ tổng hợp hoặc chuyên sâu theo sở thích,
+          từ kỹ năng số đến Coding, Robotics, AI và AIoT.
+        </p>
+        <div class="pathway-chips">
+          <span class="pathway-chip">Digital Skills</span>
+          <span class="pathway-chip">Coding</span>
+          <span class="pathway-chip">Robotics</span>
+          <span class="pathway-chip">AI</span>
+          <span class="pathway-chip">AIoT</span>
+        </div>
+      </div>
+
       <div class="profile-document">
         <div class="profile-cover">
           <img src="profile-chuong-trinh-cong-nghe.jpg" alt="Hồ sơ Chương trình Công nghệ Thiếu nhi ROBY" loading="lazy">
@@ -1376,28 +1879,9 @@
           <span class="eyebrow">Hồ sơ chương trình</span>
           <h3>Chương trình Công nghệ Thiếu nhi ROBY</h3>
           <p>
-            Tài liệu 09 trang trình bày chi tiết nội dung, độ tuổi, thời lượng,
-            mục tiêu, sản phẩm đầu ra và lộ trình phát triển cho các chương trình công nghệ tại ROBY.
+            Tài liệu 09 trang trình bày chi tiết nội dung, độ tuổi, thời lượng, mục tiêu,
+            sản phẩm đầu ra, lộ trình 12 buổi và định hướng phát triển 1–2 năm.
           </p>
-
-          <div class="profile-points">
-            <div class="profile-point">
-              <strong>05 chương trình chính</strong>
-              <span>Robot cơ bản, Tin học căn bản, Robotics, Lập trình và Trí tuệ nhân tạo.</span>
-            </div>
-            <div class="profile-point">
-              <strong>01 Level = 03 tháng</strong>
-              <span>12 buổi, định hướng học qua thực hành và sản phẩm.</span>
-            </div>
-            <div class="profile-point">
-              <strong>Độ tuổi 5–14+</strong>
-              <span>Có điểm bắt đầu phù hợp theo từng nhóm tuổi và năng lực.</span>
-            </div>
-            <div class="profile-point">
-              <strong>Lộ trình 1–2 năm</strong>
-              <span>Có thể học tổng hợp hoặc đi chuyên sâu theo Robotics, Coding, AI hay Digital Skills.</span>
-            </div>
-          </div>
 
           <div class="profile-actions">
             <a class="btn btn-primary" href="ROBY_Chuong_trinh_Cong_nghe_Thieu_nhi.pdf" target="_blank" rel="noopener">Xem hồ sơ chương trình</a>
@@ -1406,9 +1890,9 @@
         </div>
       </div>
 
-      </div>
     </div>
   </section>
+
 
   <section class="section" id="chuong-trinh">
     <div class="container">
