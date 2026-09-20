@@ -210,6 +210,70 @@
       flex-shrink:0;
     }
 
+
+    /* TOP FEATURED VIDEOS */
+    .top-videos{
+      padding:28px 0 34px;
+      background:linear-gradient(180deg,#f5f9ff 0%,#ffffff 100%);
+      border-bottom:1px solid var(--line);
+    }
+    .top-videos-head{
+      text-align:center;
+      max-width:780px;
+      margin:0 auto 22px;
+    }
+    .top-videos-head h2{
+      margin:8px 0 7px;
+      font-size:clamp(28px,3.5vw,42px);
+      line-height:1.1;
+      color:var(--blue);
+    }
+    .top-videos-head p{
+      margin:0;
+      color:var(--muted);
+      font-size:16px;
+    }
+    .top-videos-grid{
+      display:grid;
+      grid-template-columns:.62fr 1.38fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .top-video-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:22px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      min-width:0;
+    }
+    .top-video-media{
+      background:#07162f;
+      height:430px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .top-video-media video{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      background:#07162f;
+    }
+    .top-video-copy{
+      padding:16px 18px 18px;
+    }
+    .top-video-copy h3{
+      margin:0 0 5px;
+      font-size:22px;
+      color:var(--blue);
+    }
+    .top-video-copy p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+    }
+
     /* HERO */
     .hero{
       padding:66px 0 58px;
@@ -1197,7 +1261,7 @@
       .nav a:hover{background:var(--light)}
       .nav-cta{text-align:center;margin-top:4px}
 
-      .hero-grid,.about-grid,.contact-grid,.map-section,.news-feature,.schedule-layout{grid-template-columns:1fr}
+      .hero-grid,.about-grid,.contact-grid,.map-section,.news-feature,.schedule-layout,.top-videos-grid{grid-template-columns:1fr}
       .course-grid{grid-template-columns:repeat(2,1fr)}
       .video-grid{grid-template-columns:1fr}
       .footer-grid{grid-template-columns:1fr 1fr}
@@ -1210,6 +1274,15 @@
     /* PHONE */
     @media(max-width:640px){
       .container{width:min(100% - 24px,1180px)}
+
+      .top-videos{padding:20px 0 26px}
+      .top-videos-head{margin-bottom:16px}
+      .top-videos-head h2{font-size:28px}
+      .top-video-media{height:auto;min-height:0}
+      .top-video-media video{height:auto;max-height:72vh}
+      .top-video-copy{padding:14px 15px 16px}
+      .top-video-copy h3{font-size:20px}
+
 
       .topbar{
         font-size:13px;
@@ -1370,6 +1443,27 @@
       .hero h1{font-size:34px}
       .container{width:min(100% - 20px,1180px)}
     }
+  
+
+  
+    /* VIDEO LAYOUT REFINED */
+    .top-videos-grid .top-video-card:first-child .top-video-media{
+      height:390px;
+    }
+    .top-videos-grid .top-video-card:nth-child(2) .top-video-media{
+      height:470px;
+    }
+    .top-videos-grid .top-video-card:nth-child(2){
+      align-self:stretch;
+    }
+
+    @media(max-width:980px){
+      .top-videos-grid .top-video-card:first-child .top-video-media,
+      .top-videos-grid .top-video-card:nth-child(2) .top-video-media{
+        height:auto;
+      }
+    }
+
   </style>
 
   <!-- Google Analytics 4 (ROBY)
@@ -1425,95 +1519,45 @@
 
 <main id="top">
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="tag">ROBY EDUCATION & TECHNOLOGY</span>
-        <h1>Học để hiểu.<br><span>Thực hành để làm được.</span></h1>
-
-        <p style="margin:-8px 0 18px;color:#083D9D;font-size:16px;font-weight:700;">
-          AI • Robotics • STEM • Rèn chữ tại Đông Hòa, Dĩ An
-        </p>
-
-
-        <p>
-          ROBY Education & Technology tại Đông Hòa, Dĩ An là không gian học tập dành cho trẻ em và học sinh với các chương trình
-          <strong>AI, Robotics, AIoT, STEAM, Tin học</strong> cùng
-          <strong>Rèn chữ đẹp & Kỹ năng tiền tiểu học</strong>.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#chuong-trinh-hoc">Xem các chương trình</a>
-          <a class="btn btn-outline" href="https://zalo.me/0797039979" target="_blank" rel="noopener">Tư vấn qua Zalo</a>
-        </div>
-
-        <div class="hero-info">
-          <div class="info-card">
-            <strong>Thực hành</strong>
-            <span>Học qua sản phẩm và hoạt động thực tế.</span>
-          </div>
-          <div class="info-card">
-            <strong>Nhóm học phù hợp</strong>
-            <span>Tăng tương tác và hỗ trợ sát hơn.</span>
-          </div>
-          <div class="info-card">
-            <strong>Lịch linh hoạt</strong>
-            <span>Có lớp trong tuần và cuối tuần.</span>
-          </div>
-        </div>
+<section class="top-videos" aria-label="Video nổi bật ROBY">
+    <div class="container">
+      <div class="top-videos-head">
+        <span class="eyebrow">Video nổi bật</span>
+        <h2>Khám phá ROBY qua hình ảnh thực tế</h2>
+        <p>Không gian ROBY và hoạt động trải nghiệm Robot dành cho các em.</p>
       </div>
 
-      <div class="hero-photo">
-        <img src="storefront-hero.jpg" alt="ROBY Education & Technology" fetchpriority="high">
+      <div class="top-videos-grid">
+        <article class="top-video-card">
+          <div class="top-video-media">
+            <video controls playsinline preload="none" poster="poster-gioi-thieu-roby-moi.jpg">
+              <source src="video-gioi-thieu-roby-moi.mp4" type="video/mp4">
+              Trình duyệt của bạn không hỗ trợ phát video.
+            </video>
+          </div>
+          <div class="top-video-copy">
+            <h3>Giới thiệu ROBY Education &amp; Technology</h3>
+            <p>Hình ảnh giới thiệu không gian và thương hiệu ROBY.</p>
+          </div>
+        </article>
+
+        <article class="top-video-card">
+          <div class="top-video-media">
+            <video controls playsinline preload="none" poster="poster-lop-robot-roby.jpg">
+              <source src="video-lop-robot-roby.mp4" type="video/mp4">
+              Trình duyệt của bạn không hỗ trợ phát video.
+            </video>
+          </div>
+          <div class="top-video-copy">
+            <h3>Hình ảnh lớp Robot tại ROBY</h3>
+            <p>Các em thực hành, lắp ráp và trải nghiệm Robot trong lớp học.</p>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="section" id="gioi-thieu">
-    <div class="container about-grid">
-      <div class="about-photo">
-        <img src="storefront.jpg" alt="Cơ sở ROBY Education & Technology" loading="lazy">
-      </div>
-
-      <div class="about-copy">
-        <span class="eyebrow">Về ROBY</span>
-        <h2>Một môi trường học tập hiện đại, rõ mục tiêu và chú trọng thực hành.</h2>
-
-        <p>
-          <strong>ROBY Education & Technology</strong> hướng tới việc giúp học sinh
-          phát triển tư duy, kỹ năng và khả năng ứng dụng công nghệ thông qua các
-          chương trình học trực quan, dễ tiếp cận và có hoạt động thực hành.
-        </p>
-
-        <p>
-          Bên cạnh các lớp công nghệ, ROBY còn tổ chức các chương trình rèn chữ đẹp,
-          kỹ năng tiền tiểu học và hỗ trợ học tập phù hợp với nhiều độ tuổi.
-        </p>
-
-        <div class="feature-grid">
-          <div class="feature">
-            <strong>AI • Robotics • AIoT</strong>
-            <span>Khơi gợi tư duy công nghệ và khả năng giải quyết vấn đề.</span>
-          </div>
-          <div class="feature">
-            <strong>STEAM • Tin học</strong>
-            <span>Học qua hoạt động, dự án nhỏ và sản phẩm thực tế.</span>
-          </div>
-          <div class="feature">
-            <strong>Rèn chữ đẹp</strong>
-            <span>Rèn tư thế, cách cầm bút, nét chữ và sự tập trung.</span>
-          </div>
-          <div class="feature">
-            <strong>Kỹ năng tiền tiểu học</strong>
-            <span>Giúp trẻ tự tin và sẵn sàng hơn trước khi vào lớp 1.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="section section-soft" id="chuong-trinh-hoc">
+<section class="section section-soft" id="chuong-trinh-hoc">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Chương trình ROBY</span>
@@ -1893,8 +1937,93 @@
     </div>
   </section>
 
+tion class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="tag">ROBY EDUCATION & TECHNOLOGY</span>
+        <h1>Học để hiểu.<br><span>Thực hành để làm được.</span></h1>
 
-  <section class="section" id="chuong-trinh">
+        <p style="margin:-8px 0 18px;color:#083D9D;font-size:16px;font-weight:700;">
+          AI • Robotics • STEM • Rèn chữ tại Đông Hòa, Dĩ An
+        </p>
+
+
+        <p>
+          ROBY Education & Technology tại Đông Hòa, Dĩ An là không gian học tập dành cho trẻ em và học sinh với các chương trình
+          <strong>AI, Robotics, AIoT, STEAM, Tin học</strong> cùng
+          <strong>Rèn chữ đẹp & Kỹ năng tiền tiểu học</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#chuong-trinh-hoc">Xem các chương trình</a>
+          <a class="btn btn-outline" href="https://zalo.me/0797039979" target="_blank" rel="noopener">Tư vấn qua Zalo</a>
+        </div>
+
+        <div class="hero-info">
+          <div class="info-card">
+            <strong>Thực hành</strong>
+            <span>Học qua sản phẩm và hoạt động thực tế.</span>
+          </div>
+          <div class="info-card">
+            <strong>Nhóm học phù hợp</strong>
+            <span>Tăng tương tác và hỗ trợ sát hơn.</span>
+          </div>
+          <div class="info-card">
+            <strong>Lịch linh hoạt</strong>
+            <span>Có lớp trong tuần và cuối tuần.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img src="storefront-hero.jpg" alt="ROBY Education & Technology" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gioi-thieu">
+    <div class="container about-grid">
+      <div class="about-photo">
+        <img src="storefront.jpg" alt="Cơ sở ROBY Education & Technology" loading="lazy">
+      </div>
+
+      <div class="about-copy">
+        <span class="eyebrow">Về ROBY</span>
+        <h2>Một môi trường học tập hiện đại, rõ mục tiêu và chú trọng thực hành.</h2>
+
+        <p>
+          <strong>ROBY Education & Technology</strong> hướng tới việc giúp học sinh
+          phát triển tư duy, kỹ năng và khả năng ứng dụng công nghệ thông qua các
+          chương trình học trực quan, dễ tiếp cận và có hoạt động thực hành.
+        </p>
+
+        <p>
+          Bên cạnh các lớp công nghệ, ROBY còn tổ chức các chương trình rèn chữ đẹp,
+          kỹ năng tiền tiểu học và hỗ trợ học tập phù hợp với nhiều độ tuổi.
+        </p>
+
+        <div class="feature-grid">
+          <div class="feature">
+            <strong>AI • Robotics • AIoT</strong>
+            <span>Khơi gợi tư duy công nghệ và khả năng giải quyết vấn đề.</span>
+          </div>
+          <div class="feature">
+            <strong>STEAM • Tin học</strong>
+            <span>Học qua hoạt động, dự án nhỏ và sản phẩm thực tế.</span>
+          </div>
+          <div class="feature">
+            <strong>Rèn chữ đẹp</strong>
+            <span>Rèn tư thế, cách cầm bút, nét chữ và sự tập trung.</span>
+          </div>
+          <div class="feature">
+            <strong>Kỹ năng tiền tiểu học</strong>
+            <span>Giúp trẻ tự tin và sẵn sàng hơn trước khi vào lớp 1.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="section" id="chuong-trinh">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Chương trình nổi bật</span>
