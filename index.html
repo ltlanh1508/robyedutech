@@ -452,6 +452,72 @@
       font-size:16px;
     }
 
+
+    /* PROGRAM PROFILE PDF */
+    .profile-document{
+      margin-top:28px;
+      display:grid;
+      grid-template-columns:.72fr 1.28fr;
+      gap:24px;
+      align-items:center;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:22px;
+      box-shadow:var(--shadow);
+    }
+    .profile-cover{
+      background:#f4f8fd;
+      border-radius:18px;
+      overflow:hidden;
+      border:1px solid var(--line);
+    }
+    .profile-cover img{
+      width:100%;
+      height:auto;
+    }
+    .profile-content{
+      padding:8px 8px 8px 4px;
+    }
+    .profile-content h3{
+      margin:8px 0 12px;
+      color:var(--blue);
+      font-size:30px;
+      line-height:1.12;
+    }
+    .profile-content p{
+      margin:0 0 14px;
+      color:var(--muted);
+      font-size:16px;
+    }
+    .profile-points{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px 16px;
+      margin:18px 0 20px;
+    }
+    .profile-point{
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:12px 13px;
+      background:var(--light);
+    }
+    .profile-point strong{
+      display:block;
+      color:var(--blue);
+      font-size:16px;
+      margin-bottom:3px;
+    }
+    .profile-point span{
+      color:var(--muted);
+      font-size:14px;
+    }
+    .profile-actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
     /* PROGRAMS */
     .program-grid{
       display:grid;
@@ -1047,6 +1113,13 @@
         grid-template-columns:1fr;
       }
 
+      .profile-document{grid-template-columns:1fr;padding:14px}
+      .profile-content{padding:4px}
+      .profile-content h3{font-size:26px}
+      .profile-points{grid-template-columns:1fr}
+      .profile-actions{display:grid;grid-template-columns:1fr}
+
+
       .program-card img{
         height:auto;
         object-fit:contain;
@@ -1252,8 +1325,8 @@
   <section class="section section-soft" id="chuong-trinh-hoc">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Các chương trình</span>
-        <h2>Chương trình học tại ROBY</h2>
+        <span class="eyebrow">Chương trình ROBY</span>
+        <h2>CHƯƠNG TRÌNH &amp; NỘI DUNG HỌC</h2>
         <p>Thiết kế theo hướng dễ tiếp cận, có thực hành và chú trọng sự tiến bộ của học sinh.</p>
       </div>
 
@@ -1293,6 +1366,46 @@
           <h3>Kỹ năng tiền tiểu học</h3>
           <p>Chuẩn bị nền tảng, nề nếp và sự tự tin trước khi trẻ bước vào lớp 1.</p>
         </article>
+      
+      <div class="profile-document">
+        <div class="profile-cover">
+          <img src="profile-chuong-trinh-cong-nghe.jpg" alt="Hồ sơ Chương trình Công nghệ Thiếu nhi ROBY" loading="lazy">
+        </div>
+
+        <div class="profile-content">
+          <span class="eyebrow">Hồ sơ chương trình</span>
+          <h3>Chương trình Công nghệ Thiếu nhi ROBY</h3>
+          <p>
+            Tài liệu 09 trang trình bày chi tiết nội dung, độ tuổi, thời lượng,
+            mục tiêu, sản phẩm đầu ra và lộ trình phát triển cho các chương trình công nghệ tại ROBY.
+          </p>
+
+          <div class="profile-points">
+            <div class="profile-point">
+              <strong>05 chương trình chính</strong>
+              <span>Robot cơ bản, Tin học căn bản, Robotics, Lập trình và Trí tuệ nhân tạo.</span>
+            </div>
+            <div class="profile-point">
+              <strong>01 Level = 03 tháng</strong>
+              <span>12 buổi, định hướng học qua thực hành và sản phẩm.</span>
+            </div>
+            <div class="profile-point">
+              <strong>Độ tuổi 5–14+</strong>
+              <span>Có điểm bắt đầu phù hợp theo từng nhóm tuổi và năng lực.</span>
+            </div>
+            <div class="profile-point">
+              <strong>Lộ trình 1–2 năm</strong>
+              <span>Có thể học tổng hợp hoặc đi chuyên sâu theo Robotics, Coding, AI hay Digital Skills.</span>
+            </div>
+          </div>
+
+          <div class="profile-actions">
+            <a class="btn btn-primary" href="ROBY_Chuong_trinh_Cong_nghe_Thieu_nhi.pdf" target="_blank" rel="noopener">Xem hồ sơ chương trình</a>
+            <a class="btn btn-outline" href="ROBY_Chuong_trinh_Cong_nghe_Thieu_nhi.pdf" download>Tải PDF</a>
+          </div>
+        </div>
+      </div>
+
       </div>
     </div>
   </section>
