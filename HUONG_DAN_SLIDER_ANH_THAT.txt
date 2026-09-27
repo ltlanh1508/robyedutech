@@ -1,0 +1,22 @@
+ROBY - CẬP NHẬT SLIDER ẢNH THẬT
+
+Đã thay toàn bộ ảnh slider đầu trang bằng 05 hình ảnh thực tế mới của ROBY.
+
+Ảnh dùng trong slider:
+- slider-roby-1.jpg
+- slider-roby-2.jpg
+- slider-roby-3.jpg
+- slider-roby-4.jpg
+- slider-roby-5.jpg
+
+Bố cục vẫn giữ:
+Header
+→ Slider ảnh tự chạy
+→ 02 video nổi bật
+→ CHƯƠNG TRÌNH & NỘI DUNG HỌC
+→ Các phần nội dung khác
+
+Nếu cập nhật trên GitHub:
+- ghi đè file index.html
+- upload thêm 5 ảnh slider-roby-1.jpg đến slider-roby-5.jpg
+- commit changes và chờ GitHub Pages cập nhật

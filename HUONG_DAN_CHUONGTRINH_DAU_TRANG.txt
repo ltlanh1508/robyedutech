@@ -1,0 +1,22 @@
+ROBY - ĐƯA MỤC CHƯƠNG TRÌNH & NỘI DUNG HỌC LÊN ĐẦU TRANG
+
+Đã chuyển:
+CHƯƠNG TRÌNH & NỘI DUNG HỌC
+lên ngay sau Header, trước 2 video và trước các nội dung khác.
+
+Giữ nguyên:
+- 05 chương trình chi tiết
+- Lộ trình 12 buổi
+- Lộ trình 1–2 năm
+- Hồ sơ PDF
+- 02 video đầu trang
+- SEO
+- Google Analytics G-ZQWY24B903
+- Google Maps
+- Responsive điện thoại
+
+CẬP NHẬT GITHUB:
+1. Upload file index.html mới để ghi đè file cũ.
+2. Commit changes.
+3. Chờ GitHub Pages 1–3 phút.
+4. Mở lại website và Ctrl+F5 nếu trình duyệt còn cache.

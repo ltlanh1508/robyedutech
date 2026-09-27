@@ -1,0 +1,21 @@
+ROBY - THÊM HỒ SƠ PDF VÀO MỤC CHƯƠNG TRÌNH & NỘI DUNG HỌC
+
+Đã cập nhật:
+- Đổi tiêu đề thành: CHƯƠNG TRÌNH & NỘI DUNG HỌC
+- Thêm ảnh bìa hồ sơ chương trình
+- Thêm nút Xem hồ sơ chương trình
+- Thêm nút Tải PDF
+- File PDF: ROBY_Chuong_trinh_Cong_nghe_Thieu_nhi.pdf
+- Responsive trên điện thoại
+- Giữ nguyên SEO + GA4 G-ZQWY24B903
+- Không dùng cụm "khóa học" trong HTML
+
+CẬP NHẬT GITHUB:
+Upload/ghi đè:
+1. index.html
+
+Upload thêm:
+2. ROBY_Chuong_trinh_Cong_nghe_Thieu_nhi.pdf
+3. profile-chuong-trinh-cong-nghe.jpg
+
+Commit changes và chờ GitHub Pages 1-3 phút.

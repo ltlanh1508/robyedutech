@@ -1,0 +1,29 @@
+ROBY - THÊM 2 VIDEO LÊN ĐẦU WEBSITE
+
+Đã thêm ngay dưới Header:
+1. Video giới thiệu ROBY
+2. Video hình ảnh lớp Robot
+
+Đã chuyển MOV/HEVC sang MP4/H.264 để tương thích tốt với:
+- Chrome
+- Android
+- iPhone/iPad
+- GitHub Pages
+
+Thiết kế:
+- Máy tính: video giới thiệu khung lớn + video lớp Robot bên cạnh
+- Điện thoại: tự xếp 1 cột
+- Không tự chạy video để website tải nhẹ hơn
+- Có ảnh preview trước khi bấm Play
+
+CẬP NHẬT GITHUB:
+Upload/ghi đè:
+- index.html
+
+Upload thêm:
+- video-gioi-thieu-roby-moi.mp4
+- video-lop-robot-roby.mp4
+- poster-gioi-thieu-roby-moi.jpg
+- poster-lop-robot-roby.jpg
+
+Commit changes → chờ GitHub Pages 1–3 phút → mở lại website.

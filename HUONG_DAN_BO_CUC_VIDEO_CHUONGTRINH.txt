@@ -1,0 +1,28 @@
+ROBY - BỐ CỤC MỚI ĐẦU TRANG
+
+Thứ tự mới:
+1. Header
+2. 02 video nổi bật
+   - Video giới thiệu ROBY: khung nhỏ bên cạnh
+   - Video hình ảnh lớp Robot: khung lớn
+3. CHƯƠNG TRÌNH & NỘI DUNG HỌC
+4. Các phần nội dung còn lại
+
+Trên điện thoại:
+- 02 video xếp thành 1 cột
+- Không bị tràn màn hình
+- Mục chương trình nằm ngay sau 2 video
+
+Giữ nguyên:
+- 05 chương trình chi tiết
+- PDF hồ sơ
+- SEO
+- GA4 G-ZQWY24B903
+- Google Maps
+- Video khác
+- Không dùng cụm "khóa học"
+
+Cập nhật GitHub:
+- Chỉ cần ghi đè index.html
+- Commit changes
+- Chờ GitHub Pages 1-3 phút

@@ -1,0 +1,29 @@
+ROBY - SLIDER HÌNH ẢNH TỰ CHẠY ĐẦU WEBSITE
+
+Bố cục:
+Header
+→ Slider hoạt động nổi bật
+→ 02 video nổi bật
+→ CHƯƠNG TRÌNH & NỘI DUNG HỌC
+→ Nội dung còn lại
+
+Slider gồm:
+1. Hoạt động Robot thực tế
+2. Robot / STEM
+3. AI • Robotics • AIoT
+4. Lập trình
+5. Rèn chữ / tiền tiểu học
+6. Không gian ROBY
+
+Tính năng:
+- Tự chạy mỗi 4,5 giây
+- Fade + zoom nhẹ
+- Nút trái/phải
+- Chấm điều hướng
+- Vuốt trên điện thoại
+- Tạm dừng khi rê chuột
+- Responsive mobile
+
+Cập nhật GitHub:
+Chỉ cần ghi đè index.html.
+Các ảnh đang dùng đều là ảnh đã có trong website.

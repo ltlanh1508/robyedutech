@@ -211,6 +211,160 @@
     }
 
 
+
+    /* HEADER ACTIVITY SLIDER */
+    .activity-slider{
+      position:relative;
+      background:#07162f;
+      overflow:hidden;
+      border-bottom:1px solid var(--line);
+    }
+    .slider-shell{
+      position:relative;
+      width:100%;
+      height:clamp(390px,52vw,650px);
+      overflow:hidden;
+      background:#07162f;
+    }
+    .slide{
+      position:absolute;
+      inset:0;
+      opacity:0;
+      visibility:hidden;
+      transform:scale(1.025);
+      transition:opacity .8s ease, transform 1.1s ease, visibility .8s;
+    }
+    .slide.active{
+      opacity:1;
+      visibility:visible;
+      transform:scale(1);
+      z-index:2;
+    }
+    .slide img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+    }
+    .slide::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(90deg,rgba(3,22,61,.78) 0%,rgba(3,22,61,.52) 35%,rgba(3,22,61,.10) 68%,rgba(3,22,61,.05) 100%),
+        linear-gradient(0deg,rgba(0,0,0,.28),transparent 45%);
+    }
+    .slide-content{
+      position:absolute;
+      z-index:3;
+      left:max(24px,calc((100vw - 1180px)/2));
+      bottom:72px;
+      max-width:610px;
+      color:#fff;
+      padding-right:24px;
+    }
+    .slide-kicker{
+      display:inline-block;
+      font-size:14px;
+      font-weight:700;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      color:#fff;
+      background:rgba(246,154,32,.92);
+      padding:7px 12px;
+      border-radius:999px;
+      margin-bottom:12px;
+    }
+    .slide-content h2{
+      margin:0 0 10px;
+      font-size:clamp(34px,4.4vw,58px);
+      line-height:1.02;
+      text-shadow:0 2px 18px rgba(0,0,0,.25);
+    }
+    .slide-content p{
+      margin:0 0 18px;
+      font-size:18px;
+      line-height:1.45;
+      color:rgba(255,255,255,.92);
+      max-width:560px;
+    }
+    .slide-content .btn{width:auto}
+    .slider-arrow{
+      position:absolute;
+      z-index:5;
+      top:50%;
+      transform:translateY(-50%);
+      width:46px;
+      height:46px;
+      border:1px solid rgba(255,255,255,.38);
+      border-radius:50%;
+      background:rgba(7,22,47,.40);
+      color:#fff;
+      font-size:28px;
+      line-height:1;
+      display:grid;
+      place-items:center;
+      cursor:pointer;
+      backdrop-filter:blur(6px);
+      -webkit-backdrop-filter:blur(6px);
+      transition:.2s;
+    }
+    .slider-arrow:hover{
+      background:rgba(7,22,47,.75);
+      transform:translateY(-50%) scale(1.05);
+    }
+    .slider-prev{left:18px}
+    .slider-next{right:18px}
+    .slider-dots{
+      position:absolute;
+      z-index:5;
+      left:50%;
+      bottom:24px;
+      transform:translateX(-50%);
+      display:flex;
+      gap:9px;
+      align-items:center;
+    }
+    .slider-dot{
+      width:10px;
+      height:10px;
+      border:0;
+      border-radius:50%;
+      background:rgba(255,255,255,.48);
+      cursor:pointer;
+      padding:0;
+      transition:.2s;
+    }
+    .slider-dot.active{
+      width:28px;
+      border-radius:999px;
+      background:#fff;
+    }
+    @media(max-width:980px){
+      .slider-shell{height:520px}
+      .slide-content{left:28px;bottom:62px;max-width:540px}
+    }
+    @media(max-width:640px){
+      .slider-shell{height:520px}
+      .slide img{object-position:center top}
+      .slide::after{
+        background:
+          linear-gradient(0deg,rgba(3,22,61,.84) 0%,rgba(3,22,61,.52) 46%,rgba(3,22,61,.08) 78%);
+      }
+      .slide-content{
+        left:18px;right:18px;bottom:58px;max-width:none;padding-right:0;
+      }
+      .slide-kicker{font-size:11px;margin-bottom:8px}
+      .slide-content h2{font-size:34px}
+      .slide-content p{font-size:16px;margin-bottom:14px}
+      .slide-content .btn{width:100%}
+      .slider-arrow{width:40px;height:40px;font-size:24px;top:43%}
+      .slider-prev{left:10px}
+      .slider-next{right:10px}
+      .slider-dots{bottom:20px}
+    }
+
     /* TOP FEATURED VIDEOS */
     .top-videos{
       padding:28px 0 34px;
@@ -1519,6 +1673,73 @@
 
 <main id="top">
 
+  <section class="activity-slider" aria-label="Hoạt động nổi bật tại ROBY">
+    <div class="slider-shell" id="robyActivitySlider">
+
+      <article class="slide active">
+        <img src="slider-roby-1.jpg" alt="Hình ảnh lớp học tại ROBY nhìn từ bên ngoài" fetchpriority="high">
+        <div class="slide-content">
+          <span class="slide-kicker">Hình ảnh thực tế tại ROBY</span>
+          <h2>Không gian học tập gần gũi, sáng tạo và thân thiện</h2>
+          <p>ROBY xây dựng môi trường học tập nhẹ nhàng, giúp các em tự tin tham gia hoạt động, tương tác và khám phá công nghệ.</p>
+          <a class="btn btn-primary" href="#chuong-trinh-hoc">Xem chương trình</a>
+        </div>
+      </article>
+
+      <article class="slide">
+        <img src="slider-roby-2.jpg" alt="Hoạt động tương tác và đố vui tại lớp học ROBY" loading="lazy">
+        <div class="slide-content">
+          <span class="slide-kicker">Học mà chơi</span>
+          <h2>Buổi học sinh động với hình ảnh, câu hỏi và tương tác</h2>
+          <p>Các em vừa quan sát màn hình, vừa trao đổi, trả lời câu hỏi và tham gia hoạt động nhóm trong không khí vui vẻ.</p>
+          <a class="btn btn-primary" href="#video">Xem video hoạt động</a>
+        </div>
+      </article>
+
+      <article class="slide">
+        <img src="slider-roby-3.jpg" alt="Các em thực hành lắp ráp mô hình tại ROBY" loading="lazy">
+        <div class="slide-content">
+          <span class="slide-kicker">Thực hành trực tiếp</span>
+          <h2>Tự tay lắp ráp mô hình – phát triển tư duy và kỹ năng</h2>
+          <p>ROBY chú trọng trải nghiệm thực tế, để mỗi buổi học đều có hoạt động thao tác, quan sát và tạo ra sản phẩm.</p>
+          <a class="btn btn-primary" href="#chuong-trinh-hoc">Khám phá nội dung học</a>
+        </div>
+      </article>
+
+      <article class="slide">
+        <img src="slider-roby-4.jpg" alt="Giáo viên hướng dẫn hoạt động Robot tại ROBY" loading="lazy">
+        <div class="slide-content">
+          <span class="slide-kicker">Đồng hành cùng học sinh</span>
+          <h2>Giảng viên hướng dẫn sát sao trong từng hoạt động</h2>
+          <p>Từ phần khởi động đến phần thực hành, các em luôn được hỗ trợ để hiểu bài, hứng thú hơn và mạnh dạn thể hiện bản thân.</p>
+          <a class="btn btn-primary" href="https://zalo.me/0797039979" target="_blank" rel="noopener">Liên hệ tư vấn</a>
+        </div>
+      </article>
+
+      <article class="slide">
+        <img src="slider-roby-5.jpg" alt="Lớp học Robot với mô hình trưng bày tại ROBY" loading="lazy">
+        <div class="slide-content">
+          <span class="slide-kicker">Robot • STEM • Sáng tạo</span>
+          <h2>Khơi gợi đam mê công nghệ qua những trải nghiệm gần gũi</h2>
+          <p>Không gian ROBY kết hợp trình chiếu, mô hình thực tế và hoạt động nhóm để giúp trẻ học dễ hiểu và nhớ lâu hơn.</p>
+          <a class="btn btn-primary" href="#lien-he">Đăng ký ngay</a>
+        </div>
+      </article>
+
+      <button class="slider-arrow slider-prev" type="button" aria-label="Ảnh trước">‹</button>
+      <button class="slider-arrow slider-next" type="button" aria-label="Ảnh tiếp theo">›</button>
+
+      <div class="slider-dots" aria-label="Điều hướng ảnh">
+        <button class="slider-dot active" type="button" aria-label="Ảnh 1"></button>
+        <button class="slider-dot" type="button" aria-label="Ảnh 2"></button>
+        <button class="slider-dot" type="button" aria-label="Ảnh 3"></button>
+        <button class="slider-dot" type="button" aria-label="Ảnh 4"></button>
+        <button class="slider-dot" type="button" aria-label="Ảnh 5"></button>
+      </div>
+    </div>
+  </section>
+
+
 <section class="top-videos" aria-label="Video nổi bật ROBY">
     <div class="container">
       <div class="top-videos-head">
@@ -2394,6 +2615,79 @@ tion class="hero">
       }
     }, { once: true });
   });
+</script>
+
+
+<script>
+  (function(){
+    const slider = document.getElementById('robyActivitySlider');
+    if (!slider) return;
+
+    const slides = Array.from(slider.querySelectorAll('.slide'));
+    const dots = Array.from(slider.querySelectorAll('.slider-dot'));
+    const prev = slider.querySelector('.slider-prev');
+    const next = slider.querySelector('.slider-next');
+
+    let current = 0;
+    let timer = null;
+    const interval = 4500;
+
+    function showSlide(index){
+      current = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+    }
+
+    function startAuto(){
+      stopAuto();
+      timer = setInterval(() => showSlide(current + 1), interval);
+    }
+
+    function stopAuto(){
+      if (timer) clearInterval(timer);
+      timer = null;
+    }
+
+    prev.addEventListener('click', () => {
+      showSlide(current - 1);
+      startAuto();
+    });
+
+    next.addEventListener('click', () => {
+      showSlide(current + 1);
+      startAuto();
+    });
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        showSlide(i);
+        startAuto();
+      });
+    });
+
+    slider.addEventListener('mouseenter', stopAuto);
+    slider.addEventListener('mouseleave', startAuto);
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) stopAuto();
+      else startAuto();
+    });
+
+    let touchStartX = 0;
+    slider.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].clientX;
+    }, {passive:true});
+
+    slider.addEventListener('touchend', (e) => {
+      const diff = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(diff) > 45) {
+        showSlide(current + (diff < 0 ? 1 : -1));
+        startAuto();
+      }
+    }, {passive:true});
+
+    startAuto();
+  })();
 </script>
 
 </body>

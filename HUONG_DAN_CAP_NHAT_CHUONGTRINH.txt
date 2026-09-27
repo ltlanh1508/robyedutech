@@ -1,0 +1,33 @@
+ROBY - CẬP NHẬT CHƯƠNG TRÌNH & NỘI DUNG HỌC
+
+ĐÃ SỬA:
+1. Bỏ 01 mục "Thời gian" bị lặp trên menu.
+2. Tab "Chương trình" dẫn tới mục "CHƯƠNG TRÌNH & NỘI DUNG HỌC".
+3. Thay các thẻ tổng quan bằng 05 chương trình chính theo hồ sơ PDF:
+   - Robot cơ bản – Lắp ráp mô hình
+   - Tin học căn bản cho thiếu nhi
+   - Robotics cho thiếu nhi
+   - Lập trình cơ bản cho thiếu nhi
+   - Trí tuệ nhân tạo cho thiếu nhi
+4. Mỗi chương trình có:
+   - độ tuổi
+   - thời lượng
+   - đầu vào
+   - mục tiêu
+   - sản phẩm đầu ra
+   - năng lực sau 03 tháng
+   - lộ trình 12 buổi
+5. Thêm lộ trình phát triển 1–2 năm.
+6. Giữ nút Xem/Tải hồ sơ PDF.
+7. Giữ SEO + GA4 G-ZQWY24B903.
+8. Không dùng cụm "khóa học" trong HTML.
+
+CẬP NHẬT GITHUB:
+Upload/ghi đè:
+- index.html
+
+Nếu GitHub đã có PDF + ảnh bìa thì không cần upload lại:
+- ROBY_Chuong_trinh_Cong_nghe_Thieu_nhi.pdf
+- profile-chuong-trinh-cong-nghe.jpg
+
+Commit changes và chờ GitHub Pages 1–3 phút.
