@@ -1,0 +1,34 @@
+ROBY - THÊM MỤC ĐỘI NGŨ CHUYÊN MÔN
+
+Đã thêm mục:
+ĐỘI NGŨ CHUYÊN MÔN TẠI ROBY
+
+Nội dung:
+- TS. Lê Thanh Lành
+- Trình độ học vấn
+- Kinh nghiệm giảng dạy và quản lý
+- Lĩnh vực chuyên môn
+- Định hướng giáo dục tại ROBY
+- Các điểm tạo sự tin tưởng
+- Thông điệp từ giảng viên
+- Nút xem chương trình và liên hệ Zalo
+
+Đã thêm tab "Đội ngũ" trên menu.
+
+Vị trí trang chủ:
+Header
+→ Slider ảnh thật
+→ Bài Tin học & AI
+→ Đội ngũ chuyên môn
+→ 02 video nổi bật
+→ CHƯƠNG TRÌNH & NỘI DUNG HỌC
+→ các phần còn lại
+
+CẬP NHẬT GITHUB:
+Upload/ghi đè:
+1. index.html
+
+Upload thêm:
+2. doi-ngu-chuyen-mon-roby.jpg
+
+Commit changes → chờ GitHub Pages 1–3 phút.

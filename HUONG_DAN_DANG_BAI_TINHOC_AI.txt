@@ -1,0 +1,11 @@
+ROBY - ĐĂNG BÀI TIN HỌC & AI LÊN TRANG CHỦ
+
+Vị trí:
+Header → Slider ảnh thật → Bài Tin học & AI → 02 video nổi bật
+→ CHƯƠNG TRÌNH & NỘI DUNG HỌC → các phần còn lại.
+
+Upload/ghi đè:
+- index.html
+- tin-hoc-ai-thieu-nhi-roby.jpg
+
+Sau đó Commit changes và chờ GitHub Pages 1–3 phút.

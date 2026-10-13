@@ -365,6 +365,262 @@
       .slider-dots{bottom:20px}
     }
 
+
+
+    /* PROFESSIONAL TEAM */
+    .team-section{
+      padding:80px 0;
+      background:#fff;
+      border-bottom:1px solid var(--line);
+    }
+    .team-intro{
+      max-width:860px;
+      margin:0 auto 32px;
+      text-align:center;
+    }
+    .team-intro h2{
+      margin:12px 0 10px;
+      color:var(--blue);
+      font-size:clamp(32px,4vw,48px);
+      line-height:1.08;
+    }
+    .team-intro p{
+      margin:0;
+      color:var(--muted);
+      font-size:17px;
+    }
+    .team-profile{
+      display:grid;
+      grid-template-columns:.82fr 1.18fr;
+      gap:30px;
+      align-items:start;
+    }
+    .team-poster{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:8px;
+      box-shadow:var(--shadow);
+      position:sticky;
+      top:110px;
+    }
+    .team-poster img{
+      width:100%;
+      height:auto;
+      border-radius:17px;
+    }
+    .team-content{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:30px;
+      box-shadow:var(--shadow);
+    }
+    .team-name{
+      margin:0 0 6px;
+      color:var(--blue);
+      font-size:32px;
+      line-height:1.1;
+    }
+    .team-role{
+      margin:0 0 18px;
+      color:var(--orange);
+      font-size:18px;
+      font-weight:700;
+    }
+    .team-summary{
+      margin:0 0 20px;
+      color:var(--muted);
+      font-size:17px;
+    }
+    .team-badges{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-bottom:22px;
+    }
+    .team-badge{
+      border-radius:999px;
+      background:#eef6ff;
+      border:1px solid #d8e8fb;
+      color:var(--blue);
+      padding:8px 12px;
+      font-size:14px;
+      font-weight:700;
+    }
+    .team-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+      margin-top:20px;
+    }
+    .team-box{
+      border:1px solid var(--line);
+      border-radius:17px;
+      padding:18px;
+      background:var(--light);
+    }
+    .team-box h3{
+      margin:0 0 10px;
+      color:var(--blue);
+      font-size:20px;
+    }
+    .team-box ul{
+      margin:0;
+      padding-left:20px;
+      color:var(--muted);
+      font-size:15px;
+    }
+    .team-box li{
+      margin:7px 0;
+    }
+    .team-box p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+    }
+    .team-specialties{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:10px;
+      margin-top:12px;
+    }
+    .team-specialty{
+      border:1px solid var(--line);
+      background:#fff;
+      border-radius:14px;
+      padding:13px;
+    }
+    .team-specialty strong{
+      display:block;
+      color:var(--blue);
+      font-size:15px;
+      margin-bottom:3px;
+    }
+    .team-specialty span{
+      color:var(--muted);
+      font-size:14px;
+    }
+    .team-philosophy{
+      margin-top:22px;
+      border-radius:20px;
+      padding:22px;
+      background:linear-gradient(135deg,#eef6ff,#fffaf1);
+      border:1px solid #dce9f8;
+    }
+    .team-philosophy h3{
+      margin:0 0 10px;
+      color:var(--blue);
+      font-size:22px;
+    }
+    .team-philosophy-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:12px;
+    }
+    .team-philosophy-item{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:15px;
+      padding:14px;
+    }
+    .team-philosophy-item strong{
+      display:block;
+      color:var(--orange);
+      margin-bottom:5px;
+      font-size:15px;
+    }
+    .team-philosophy-item span{
+      color:var(--muted);
+      font-size:14px;
+    }
+    .team-quote{
+      margin-top:22px;
+      border-left:5px solid var(--orange);
+      background:#fff8ea;
+      padding:20px 22px;
+      border-radius:0 16px 16px 0;
+      color:#3d4656;
+      font-size:17px;
+      font-style:italic;
+      line-height:1.6;
+    }
+    .team-quote strong{
+      display:block;
+      margin-top:10px;
+      color:var(--blue);
+      font-style:normal;
+    }
+    .team-trust{
+      margin-top:22px;
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:10px;
+    }
+    .team-trust-item{
+      text-align:center;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:15px;
+      padding:15px 10px;
+    }
+    .team-trust-item strong{
+      display:block;
+      color:var(--blue);
+      font-size:15px;
+      margin-bottom:4px;
+    }
+    .team-trust-item span{
+      color:var(--muted);
+      font-size:13px;
+    }
+    @media(max-width:980px){
+      .team-profile{grid-template-columns:1fr}
+      .team-poster{position:static;max-width:700px;margin:auto}
+      .team-philosophy-grid{grid-template-columns:1fr}
+      .team-trust{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:640px){
+      .team-section{padding:58px 0}
+      .team-content{padding:20px}
+      .team-name{font-size:27px}
+      .team-grid,.team-specialties,.team-trust{grid-template-columns:1fr}
+    }
+
+    /* FEATURED COMPUTER & AI PROGRAM */
+    .featured-ai{padding:72px 0;background:linear-gradient(180deg,#fff 0%,#f6faff 100%);border-bottom:1px solid var(--line)}
+    .featured-ai-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:30px;align-items:start}
+    .featured-ai-poster{background:#fff;border:1px solid var(--line);border-radius:24px;padding:8px;box-shadow:var(--shadow);position:sticky;top:110px}
+    .featured-ai-poster img{width:100%;height:auto;border-radius:17px}
+    .featured-ai-content{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:var(--shadow)}
+    .featured-ai-content h2{margin:10px 0 8px;color:var(--blue);font-size:clamp(32px,4vw,48px);line-height:1.08}
+    .featured-ai-lead{font-size:18px;color:var(--muted);margin:0 0 18px}
+    .featured-ai-badges{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 22px}
+    .featured-ai-badge{background:#eef6ff;color:var(--blue);border:1px solid #d8e8fb;border-radius:999px;padding:8px 12px;font-size:14px;font-weight:700}
+    .featured-ai-section{margin-top:22px}
+    .featured-ai-section h3{margin:0 0 10px;color:var(--blue);font-size:23px}
+    .featured-ai-list{margin:0;padding-left:21px;color:var(--muted);font-size:16px}
+    .featured-ai-list li{margin:7px 0}
+    .featured-ai-columns{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+    .featured-ai-box{border:1px solid var(--line);border-radius:17px;padding:16px;background:var(--light)}
+    .featured-ai-box strong{display:block;color:var(--blue);font-size:17px;margin-bottom:7px}
+    .featured-ai-box ul{margin:0;padding-left:18px;color:var(--muted);font-size:14px}
+    .featured-ai-box li{margin:5px 0}
+    .featured-ai-roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+    .featured-ai-month{border:1px solid var(--line);border-radius:16px;padding:15px;background:#fff}
+    .featured-ai-month strong{display:block;color:var(--orange);margin-bottom:6px;font-size:16px}
+    .featured-ai-month span{color:var(--muted);font-size:14px}
+    .featured-ai-info{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;margin-top:14px}
+    .featured-ai-info div{border:1px solid var(--line);border-radius:15px;padding:13px 14px;background:#fff}
+    .featured-ai-info strong{display:block;color:var(--blue);margin-bottom:3px;font-size:14px}
+    .featured-ai-info span{color:var(--muted);font-size:14px}
+    .featured-ai-cta{margin-top:24px;padding:20px;border-radius:18px;background:linear-gradient(135deg,var(--blue),var(--navy));color:#fff}
+    .featured-ai-cta h3{margin:0 0 6px;font-size:24px}
+    .featured-ai-cta p{margin:0 0 14px;color:rgba(255,255,255,.86)}
+    .featured-ai-cta .btn-outline{background:#fff;border-color:#fff}
+    @media(max-width:980px){.featured-ai-grid{grid-template-columns:1fr}.featured-ai-poster{position:static;max-width:680px;margin:auto}.featured-ai-columns,.featured-ai-roadmap{grid-template-columns:1fr}}
+    @media(max-width:640px){.featured-ai{padding:54px 0}.featured-ai-content{padding:20px}.featured-ai-content h2{font-size:31px}.featured-ai-info{grid-template-columns:1fr}.featured-ai-badges{gap:7px}.featured-ai-badge{font-size:13px}}
+
     /* TOP FEATURED VIDEOS */
     .top-videos{
       padding:28px 0 34px;
@@ -1662,6 +1918,8 @@
     <nav class="nav" aria-label="Menu chính">
       <a href="#gioi-thieu">Giới thiệu</a>
       <a href="#chuong-trinh-hoc">Chương trình</a>
+      <a href="#tin-hoc-ai">Tin học &amp; AI</a>
+      <a href="#doi-ngu">Đội ngũ</a>
       <a href="#chuong-trinh">Nổi bật</a>
           <a href="#thoi-gian">Thời gian</a>
       <a href="#video">Video</a>
@@ -1740,7 +1998,234 @@
   </section>
 
 
-<section class="top-videos" aria-label="Video nổi bật ROBY">
+
+  <section class="featured-ai" id="tin-hoc-ai">
+    <div class="container">
+      <div class="featured-ai-grid">
+        <div class="featured-ai-poster">
+          <img src="tin-hoc-ai-thieu-nhi-roby.jpg" alt="Tin học và AI cho thiếu nhi tại ROBY Education & Technology" loading="lazy">
+        </div>
+        <article class="featured-ai-content">
+          <span class="eyebrow">Chương trình nổi bật</span>
+          <h2>TIN HỌC VÀ AI CHO THIẾU NHI</h2>
+          <p class="featured-ai-lead">Giúp trẻ làm chủ máy tính, sử dụng công nghệ hiệu quả và bước đầu tiếp cận trí tuệ nhân tạo theo hướng an toàn, có trách nhiệm.</p>
+
+          <div class="featured-ai-badges">
+            <span class="featured-ai-badge">Từ 7 tuổi trở lên</span>
+            <span class="featured-ai-badge">Lộ trình 03 tháng</span>
+            <span class="featured-ai-badge">90 phút / buổi</span>
+            <span class="featured-ai-badge">Tối đa 05 học sinh / lớp</span>
+          </div>
+
+          <div class="featured-ai-section">
+            <h3>1. Nội dung học</h3>
+            <div class="featured-ai-columns">
+              <div class="featured-ai-box"><strong>💻 Tin học căn bản</strong><ul><li>Làm quen Windows, chuột và bàn phím.</li><li>Luyện gõ 10 ngón.</li><li>Quản lý tệp và thư mục.</li><li>Hình thành thói quen sử dụng máy tính đúng cách.</li></ul></div>
+              <div class="featured-ai-box"><strong>📚 Tin học ứng dụng</strong><ul><li>Soạn thảo và trình bày văn bản bằng Word.</li><li>Thiết kế bài trình chiếu bằng PowerPoint.</li><li>Tìm kiếm thông tin trên Internet.</li><li>Nhận biết và phòng tránh nguy cơ trên môi trường mạng.</li></ul></div>
+              <div class="featured-ai-box"><strong>🤖 AI cơ bản</strong><ul><li>Khám phá AI và các ứng dụng gần gũi.</li><li>Biết đặt câu hỏi hiệu quả cho AI.</li><li>Dùng AI hỗ trợ tìm hiểu và ôn tập.</li><li>Biết kiểm tra thông tin và sử dụng AI có trách nhiệm.</li></ul></div>
+            </div>
+          </div>
+
+          <div class="featured-ai-section">
+            <h3>2. Điểm nổi bật tại ROBY</h3>
+            <ul class="featured-ai-list">
+              <li><strong>Mỗi lớp tối đa 05 học sinh</strong> để tăng thời gian thực hành và hỗ trợ sát hơn.</li>
+              <li>Chương trình được hướng dẫn bởi <strong>giảng viên có trình độ Tiến sĩ chuyên ngành Công nghệ thông tin</strong>, đang công tác tại Đại học Quốc gia TP.HCM.</li>
+              <li>Phù hợp cả với học sinh chưa từng sử dụng máy tính.</li>
+              <li>AI được tiếp cận theo hướng an toàn, đúng độ tuổi và có giáo viên hướng dẫn.</li>
+              <li>Học sinh có sản phẩm thực hành: văn bản, bài trình chiếu và dự án học tập đơn giản.</li>
+            </ul>
+          </div>
+
+          <div class="featured-ai-section">
+            <h3>3. Lộ trình 03 tháng</h3>
+            <div class="featured-ai-roadmap">
+              <div class="featured-ai-month"><strong>Tháng 1</strong><span>Làm chủ máy tính, Windows, chuột, bàn phím, luyện gõ và quản lý tệp.</span></div>
+              <div class="featured-ai-month"><strong>Tháng 2</strong><span>Word, PowerPoint, tìm kiếm thông tin và Internet an toàn.</span></div>
+              <div class="featured-ai-month"><strong>Tháng 3</strong><span>AI cơ bản, ứng dụng AI hỗ trợ học tập và thực hiện dự án cuối chương trình.</span></div>
+            </div>
+          </div>
+
+          <div class="featured-ai-section">
+            <h3>4. Thông tin chương trình</h3>
+            <div class="featured-ai-info">
+              <div><strong>Đối tượng</strong><span>Học sinh từ 7 tuổi trở lên</span></div>
+              <div><strong>Đầu vào</strong><span>Không yêu cầu kiến thức tin học</span></div>
+              <div><strong>Thời gian</strong><span>03 tháng</span></div>
+              <div><strong>Thời lượng</strong><span>90 phút / buổi</span></div>
+              <div><strong>Sĩ số</strong><span>Tối đa 05 học sinh / lớp</span></div>
+              <div><strong>Phương pháp</strong><span>Học qua thực hành – Học mà chơi – Khuyến khích sáng tạo</span></div>
+              <div><strong>Thứ Năm</strong><span>18:00 – 19:30</span></div>
+              <div><strong>Thứ Bảy</strong><span>16:00 – 17:30</span></div>
+            </div>
+          </div>
+
+          <div class="featured-ai-section">
+            <h3>5. Kết quả mong đợi</h3>
+            <ul class="featured-ai-list">
+              <li>Tự tin sử dụng máy tính phục vụ học tập.</li>
+              <li>Thực hiện các thao tác cơ bản trên Windows.</li>
+              <li>Soạn thảo văn bản và tạo bài trình chiếu đơn giản.</li>
+              <li>Tìm kiếm thông tin và nhận biết nguyên tắc an toàn Internet.</li>
+              <li>Biết sử dụng AI có hướng dẫn để tìm hiểu và ôn tập kiến thức.</li>
+              <li>Hoàn thành sản phẩm thực hành cá nhân.</li>
+            </ul>
+          </div>
+
+          <div class="featured-ai-cta">
+            <h3>Mỗi lớp chỉ 05 học sinh</h3>
+            <p>Liên hệ ROBY để được tư vấn chương trình và giữ chỗ phù hợp.</p>
+            <div class="hero-actions" style="margin-bottom:0">
+              <a class="btn btn-outline" href="https://zalo.me/0797039979" target="_blank" rel="noopener">Đăng ký qua Zalo</a>
+              <a class="btn btn-orange" href="tel:0797039979">Gọi 0797 039 979</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <section class="team-section" id="doi-ngu">
+    <div class="container">
+
+      <div class="team-intro">
+        <span class="eyebrow">Đội ngũ chuyên môn</span>
+        <h2>GIẢNG VIÊN CHUYÊN MÔN TẠI ROBY</h2>
+        <p>
+          ROBY hướng đến xây dựng môi trường giáo dục công nghệ có nền tảng chuyên môn,
+          học qua thực hành và đồng hành sát với từng học sinh.
+        </p>
+      </div>
+
+      <div class="team-profile">
+        <div class="team-poster">
+          <img src="doi-ngu-chuyen-mon-roby.jpg"
+               alt="TS. Lê Thanh Lành - Giảng viên chuyên môn tại ROBY Education & Technology"
+               loading="lazy">
+        </div>
+
+        <article class="team-content">
+          <h3 class="team-name">TS. LÊ THANH LÀNH</h3>
+          <p class="team-role">Giảng viên Trường Đại học Quốc tế – Đại học Quốc gia TP.HCM</p>
+
+          <p class="team-summary">
+            Đồng hành cùng ROBY trong hoạt động giảng dạy và định hướng chuyên môn,
+            với nền tảng về Công nghệ thông tin, Trí tuệ nhân tạo (AI), Robotics,
+            STEM, IoT và các công nghệ thông minh.
+          </p>
+
+          <div class="team-badges">
+            <span class="team-badge">Ph.D. – NKUST, Đài Loan</span>
+            <span class="team-badge">M.S. – HCMUTE</span>
+            <span class="team-badge">AI • Robotics • STEM</span>
+            <span class="team-badge">IoT • Công nghệ ứng dụng</span>
+          </div>
+
+          <div class="team-grid">
+
+            <div class="team-box">
+              <h3>🎓 Trình độ học vấn</h3>
+              <ul>
+                <li><strong>Tiến sĩ (Ph.D.)</strong>, tốt nghiệp năm 2020 tại National Kaohsiung University of Science and Technology (NKUST), Đài Loan.</li>
+                <li><strong>Thạc sĩ</strong>, tốt nghiệp năm 2015 tại Trường Đại học Sư phạm Kỹ thuật TP.HCM.</li>
+              </ul>
+            </div>
+
+            <div class="team-box">
+              <h3>🏫 Kinh nghiệm chuyên môn</h3>
+              <ul>
+                <li>Giảng viên Trường Đại học Quốc tế – Đại học Quốc gia TP.HCM.</li>
+                <li>Nguyên Phó Trưởng khoa Công nghệ thông tin, Trường Đại học Công nghệ Đồng Nai.</li>
+                <li>Nguyên Giám đốc, đồng sáng lập Trung tâm AIBOT.</li>
+                <li>Kinh nghiệm giảng dạy, nghiên cứu và triển khai ứng dụng công nghệ trong giáo dục.</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="team-box" style="margin-top:14px">
+            <h3>💻 Lĩnh vực chuyên môn</h3>
+            <div class="team-specialties">
+              <div class="team-specialty">
+                <strong>Trí tuệ nhân tạo (AI)</strong>
+                <span>AI trong nhận dạng hình ảnh, xử lý thông tin và hệ thống thông minh.</span>
+              </div>
+              <div class="team-specialty">
+                <strong>Công nghệ thông tin</strong>
+                <span>Nền tảng máy tính, lập trình và ứng dụng công nghệ.</span>
+              </div>
+              <div class="team-specialty">
+                <strong>Robotics &amp; STEM</strong>
+                <span>Học thông qua robot, mô hình và các dự án thực hành.</span>
+              </div>
+              <div class="team-specialty">
+                <strong>Internet vạn vật (IoT)</strong>
+                <span>Kết nối thiết bị, cảm biến và phát triển ứng dụng thông minh.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-philosophy">
+            <h3>Định hướng giáo dục tại ROBY</h3>
+            <div class="team-philosophy-grid">
+              <div class="team-philosophy-item">
+                <strong>01. Nền tảng công nghệ từ sớm</strong>
+                <span>Giúp học sinh làm quen máy tính, thiết bị và các khái niệm kỹ thuật phù hợp lứa tuổi.</span>
+              </div>
+              <div class="team-philosophy-item">
+                <strong>02. Phát triển tư duy</strong>
+                <span>Khuyến khích quan sát, đặt câu hỏi, thử nghiệm và tự tìm giải pháp qua Robotics và STEM.</span>
+              </div>
+              <div class="team-philosophy-item">
+                <strong>03. Tiếp cận AI an toàn</strong>
+                <span>Rèn tư duy phản biện, kiểm chứng thông tin và sử dụng công nghệ có trách nhiệm.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-trust">
+            <div class="team-trust-item">
+              <strong>Chuyên môn vững vàng</strong>
+              <span>Nền tảng học thuật và công nghệ.</span>
+            </div>
+            <div class="team-trust-item">
+              <strong>Kinh nghiệm giảng dạy</strong>
+              <span>Kết hợp lý thuyết và thực tiễn.</span>
+            </div>
+            <div class="team-trust-item">
+              <strong>Học qua trải nghiệm</strong>
+              <span>Thao tác, thử nghiệm và tạo sản phẩm.</span>
+            </div>
+            <div class="team-trust-item">
+              <strong>Đồng hành sát</strong>
+              <span>Ưu tiên lớp nhỏ và hỗ trợ từng học sinh.</span>
+            </div>
+          </div>
+
+          <div class="team-quote">
+            “Công nghệ không chỉ là công cụ để sử dụng, mà còn là phương tiện giúp trẻ
+            khám phá thế giới, phát triển tư duy và thể hiện sự sáng tạo.
+            Điều quan trọng không phải là trẻ biết sử dụng bao nhiêu công cụ công nghệ,
+            mà là trẻ hiểu cách học, biết đặt câu hỏi và biết vận dụng kiến thức để tạo ra
+            những giá trị thiết thực.”
+            <strong>– TS. Lê Thanh Lành</strong>
+          </div>
+
+          <div class="hero-actions" style="margin-top:22px;margin-bottom:0">
+            <a class="btn btn-primary" href="#chuong-trinh-hoc">Xem chương trình tại ROBY</a>
+            <a class="btn btn-outline" href="https://zalo.me/0797039979" target="_blank" rel="noopener">Liên hệ tư vấn</a>
+          </div>
+
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="top-videos" aria-label="Video nổi bật ROBY">
     <div class="container">
       <div class="top-videos-head">
         <span class="eyebrow">Video nổi bật</span>
